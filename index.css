@@ -721,3 +721,10 @@ ul.footer__info li {
 	font-size: 16px;
 	padding: 10px 0;
 }
+
+.delay-250ms {
+	animation-delay: 250ms;
+}
+.delay-500ms {
+	animation-delay: 500ms;
+}
