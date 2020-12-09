@@ -350,6 +350,27 @@ li {
 
 /* screen 2 */
 
+@keyframes resizeCircle {
+	0% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+.screen-2__small-cricle:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 100;
+	border-radius: 100%;
+	transform: scale(0);
+	animation: resizeCircle 1.5s ease;
+}
 .screen-2 {
 	background: #22222c;
 	position: relative;

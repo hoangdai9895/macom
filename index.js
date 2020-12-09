@@ -19,4 +19,10 @@ function onResize() {
 		(windowWidth * 8) / 10 + "px";
 }
 
+let screen3Li = document.querySelectorAll(".screen-3__list li");
+
+for (let index = 0; index < screen3Li.length; index++) {
+	const element = screen3Li[index];
+	element.onmouseover = function () {};
+}
 //document.getElementsByTagName("body")[0].style.backgroundColor = "green";

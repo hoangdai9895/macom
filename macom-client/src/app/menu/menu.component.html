@@ -1,0 +1,38 @@
+<div class="menu-wrap open">
+  <!-- animate__animated animate__slideInLeft -->
+  <div class="main-button">
+    <img
+      src="/assets/img/menu_icon_close.png"
+      alt="menu_icon"
+      class="menu-icon"
+      (click)="closeMenu()"
+    />
+  </div>
+
+  <div class="menu">
+    <div class="menu__decor">
+      <img src="" src="/assets/img/menu_img.png" />
+    </div>
+    <div class="menu__main">
+      <ul>
+        <li *ngFor="let item of menu">
+          <a [routerLink]="item.routerLink" (click)="closeMenu()">{{
+            item.title
+          }}</a>
+        </li>
+      </ul>
+
+      <div class="menu__main__float-text">
+        <div class="">
+          <p class="--p1">Agency</p>
+        </div>
+
+        <div><p class="--p2">Marketing</p></div>
+
+        <div>
+          <p class="--p3">Performance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
