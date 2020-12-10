@@ -1,0 +1,58 @@
+<div class="our-work">
+  <div class="our-work__navbar">
+    <ul>
+      <li *ngFor="let item of navs">
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
+  <div class="our-work__content">
+    <div class="our-work__content__left">
+      <h3>Our.work</h3>
+      <div class="our-work__content__slide">
+        <ngx-slick-carousel
+          class="carousel"
+          #slickModal="slick-carousel"
+          [config]="slideConfig"
+        >
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%" />
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+    <div class="our-work__content__right">
+      <div class="our-work__item">
+        <h3>Campaign</h3>
+        <p>
+          Knight Series antibacterial washing machine Launching - Lazada's
+          birthday 27th March Time: March 20th - March 27th (2020)
+        </p>
+      </div>
+      <div class="our-work__item">
+        <h3>Solution</h3>
+        <p class="sub">Idea</p>
+        <p>
+          Idea Focus on key products with the best promotions and use more than
+          20 different testing contents for optimal results. Communication
+          strategy The campaign has 3 phases: Testing - During sale - Sale day
+          aiming to introduce - remind - promote purchasing. Media Strategy
+          Facebook collaborative Ads, KOLs livestream, PR.
+        </p>
+        <p class="sub">Communication strategy</p>
+        <p>
+          The campaign has 3 phases: Testing - During sale - Sale day aiming to
+          introduce - remind - promote purchasing. .
+        </p>
+        <p class="sub">Media Strategy</p>
+        <p>Facebook collaborative Ads, KOLs livestream, PR.</p>
+      </div>
+      <div class="our-work__item">
+        <h3>Result</h3>
+        <p><span>ROAS:</span> +600%</p>
+        <p><span>Add to cart:</span> +6932%</p>
+        <p><span>Orders:</span> +650</p>
+      </div>
+    </div>
+  </div>
+</div>

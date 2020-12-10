@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
     },
     {
       title: "Our work",
-      routerLink: "",
+      routerLink: "/our-work",
     },
     {
       title: "About us",

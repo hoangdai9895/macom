@@ -1,15 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
-import { WhatwedoComponent } from './whatwedo/whatwedo.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { HomeComponent } from "./home/home.component";
+import { MenuComponent } from "./menu/menu.component";
+import { WhatwedoComponent } from "./whatwedo/whatwedo.component";
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { AboutComponent } from "./about/about.component";
+import { OurWorkComponent } from "./our-work/our-work.component";
 
+import { SlickCarouselModule } from "ngx-slick-carousel";
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,11 @@ import { AboutComponent } from './about/about.component';
     WhatwedoComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    OurWorkComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, SlickCarouselModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
