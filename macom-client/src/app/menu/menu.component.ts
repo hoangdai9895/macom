@@ -27,12 +27,12 @@ export class MenuComponent implements OnInit {
     },
     {
       title: "Career",
-      routerLink: "",
+      routerLink: "/career",
     },
 
     {
       title: "Contact",
-      routerLink: "",
+      routerLink: "/contact",
     },
   ];
 

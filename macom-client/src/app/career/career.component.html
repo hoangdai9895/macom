@@ -1,0 +1,75 @@
+<div class="career">
+  <h3>Career</h3>
+  <div class="career__search">
+    <input type="text" placeholder="Job title.." />
+    <img src="/assets/img/search.png" alt="" class="search" />
+  </div>
+  <div class="career__content">
+    <div
+      class="career__item"
+      *ngFor="let in of [].constructor(12); let i = index"
+      (click)="togglePopup()"
+    >
+      <h4 class="career__item__title">Job title</h4>
+      <h2 class="career__item__header">React Native Developer</h2>
+
+      <h4 class="career__item__title">Salary</h4>
+
+      <p>Wage agreement</p>
+      <h4 class="career__item__title">Job description</h4>
+      <p>
+        Review business requirements working with team members. Perform a
+        technical analysis of requirements. Produce a solid, detailed technical
+        design...
+      </p>
+
+      <div class="career__item__view">
+        <span>View details</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="career__popup" *ngIf="isOpenPopup">
+    <div class="career__popup__content career__item">
+      <div class="close">
+        <img src="/assets/img/close_black.png" alt="" (click)="togglePopup()" />
+      </div>
+
+      <h4 class="career__item__title">Job title</h4>
+      <h2 class="career__item__header">React Native Developer</h2>
+      <div class="main">
+        <h4 class="career__item__title">Salary</h4>
+
+        <p>Wage agreement</p>
+        <h4 class="career__item__title">Job description</h4>
+        <p>
+          Review business requirements working with team members. Perform a
+          technical analysis of requirements. Produce a solid, detailed
+          technical design...
+        </p>
+        <p>
+          Review business requirements working with team members. Perform a
+          technical analysis of requirements. Produce a solid, detailed
+          technical design...
+        </p>
+        <p>
+          Review business requirements working with team members. Perform a
+          technical analysis of requirements. Produce a solid, detailed
+          technical design...
+        </p>
+        <p>
+          Review business requirements working with team members. Perform a
+          technical analysis of requirements. Produce a solid, detailed
+          technical design...
+        </p>
+
+        <p>
+          Review business requirements working with team members. Perform a
+          technical analysis of requirements. Produce a solid, detailed
+          technical design...
+        </p>
+      </div>
+      <a href="" class="career__btn"> Apply now </a>
+    </div>
+  </div>
+</div>

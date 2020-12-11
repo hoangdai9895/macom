@@ -12,6 +12,8 @@ import { AboutComponent } from "./about/about.component";
 import { OurWorkComponent } from "./our-work/our-work.component";
 
 import { SlickCarouselModule } from "ngx-slick-carousel";
+import { ContactComponent } from './contact/contact.component';
+import { CareerComponent } from './career/career.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { SlickCarouselModule } from "ngx-slick-carousel";
     FooterComponent,
     AboutComponent,
     OurWorkComponent,
+    ContactComponent,
+    CareerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SlickCarouselModule],
   providers: [],
