@@ -1,9 +1,15 @@
+:root {
+	--heading: calc(80px * 1366 / 1920);
+	--heading2: calc(40px * 1366 / 1920);
+}
+
 body,
 html,
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 .w-30 {
 	width: 30% !important;
@@ -327,6 +333,7 @@ li {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	transition: 250ms;
 }
 
 .arrow-down {
@@ -733,13 +740,14 @@ ul.footer__info li {
 	margin: 0 25px 0 0;
 	color: #cccccc;
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: calc(16px * 1366 / 1920);
 	padding: 10px 0;
 }
+
 .footer__copy {
 	color: #cccccc;
 	font-family: Roboto;
-	font-size: 16px;
+	font-size: calc(16px * 1366 / 1920);
 	padding: 10px 0;
 }
 
@@ -748,4 +756,8 @@ ul.footer__info li {
 }
 .delay-500ms {
 	animation-delay: 500ms;
+}
+.hidden {
+	opacity: 0;
+	visibility: hidden;
 }

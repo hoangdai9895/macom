@@ -1,0 +1,112 @@
+.our-work {
+	width: 100%;
+	padding: 10%;
+}
+.our-work .our-work__navbar {
+	margin: 0 0 50px 0;
+}
+.our-work .our-work__navbar ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.our-work .our-work__navbar ul li {
+	-webkit-backdrop-filter: blur(50px);
+	backdrop-filter: blur(50px);
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #c4c4c4;
+	display: inline-block;
+	margin: 0 30px 0 0;
+	cursor: pointer;
+}
+.our-work .our-work__navbar ul li:hover {
+	color: #0000ff;
+}
+.our-work .our-work__content {
+	display: flex;
+	justify-content: space-between;
+}
+.our-work .our-work__content .our-work__content__left {
+	width: 40%;
+}
+.our-work .our-work__content .our-work__content__left h3 {
+	font-family: "Space Mono";
+	font-size: 44px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #b7b7b7;
+}
+.our-work .our-work__content .our-work__content__right {
+	width: 60%;
+	padding: 0 0 0 5%;
+}
+.our-work .our-work__content .our-work__content__right .our-work__item {
+	margin: 0 0 30px 0;
+}
+.our-work .our-work__content .our-work__content__right .our-work__item h3 {
+	font-family: "Roboto";
+	font-size: 30px;
+	font-weight: 100;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.92;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4e4e4e;
+}
+.our-work .our-work__content .our-work__content__right .our-work__item p {
+	font-family: "Roboto";
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.92;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4e4e4e;
+	margin: 0 0 20px 0;
+}
+.our-work .our-work__content .our-work__content__right .our-work__item p span {
+	font-weight: bold;
+}
+.our-work .our-work__content .our-work__content__right .our-work__item p.sub {
+	font-weight: bold;
+}
+
+.slide-arr {
+	cursor: pointer;
+	z-index: 1001;
+}
+.our-work__content__slide .arr-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+.our-work__content__slide .arr-left {
+	position: absolute;
+	right: left;
+	bottom: 0;
+	cursor: pointer;
+}
+.slick-slide img {
+	display: block;
+	width: 100%;
+}
+footer {
+	background: transparent;
+}
+footer li,
+.footer__copy {
+	color: #4e4e4e !important;
+}

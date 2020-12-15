@@ -1,0 +1,73 @@
+.contact {
+	padding: 10%;
+	width: 100%;
+	height: calc(100vh - 39px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #22222c;
+}
+.contact .contact__info {
+	padding: 0 0 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+.contact .contact__info p {
+	font-family: "Space Mono";
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #8d8d9c;
+	margin: 0 0 30px 0;
+}
+.contact .contact__info p.sub {
+	font-size: 24px;
+	color: #fff;
+}
+.contact .contact__form {
+	width: 50%;
+	padding: 5%;
+}
+.contact .contact__form form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.contact .contact__form .screen-2__btn {
+	position: static;
+	margin: 25px 0 0 0;
+	width: max-content;
+}
+.contact .contact__form .contact__form-item {
+	display: flex;
+	flex-direction: column;
+}
+.contact .contact__form .contact__form-item label {
+	font-family: "Space Mono";
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 3;
+	letter-spacing: normal;
+	text-align: left;
+	color: #8d8d9c;
+}
+.contact .contact__form .contact__form-item input {
+	padding: 16px 331px 16px 24px;
+	opacity: 0.56;
+	border: 1px solid transparent;
+	background-color: #383841;
+	color: #fff;
+}
+.contact .contact__form .contact__form-item input:focus {
+	border: solid 1px #0000ff;
+	outline: none;
+}
