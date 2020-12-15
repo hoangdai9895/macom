@@ -12,7 +12,7 @@
 }
 .wwd__intro h1 {
 	font-family: "Space Mono";
-	font-size: calc(80px * 1366 / 1920);
+	font-size: var(--heading);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -58,7 +58,7 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #ffffff;
-	margin-bottom: calc(40px * 1366 / 1920);
+	margin-bottom: var(--heading1);
 }
 
 .wwd__item {
@@ -106,7 +106,7 @@
 	left: 0;
 	top: 0%;
 	margin: 0 !important;
-	font-size: calc(40px * 1366 / 1920);
+	font-size: var(--heading1);
 	transform: translateY(-50%);
 }
 
@@ -114,7 +114,7 @@
 	position: absolute;
 	left: -100px;
 	bottom: -8px;
-	font-size: calc(80px * 1366 / 1920);
+	font-size: var(--heading);
 	color: #dedede;
 }
 .wwd__item .wwd__item-left p {

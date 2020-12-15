@@ -10,11 +10,12 @@
 	align-items: center;
 	justify-content: center;
 }
-.our-work .our-work__navbar ul li {
+.our-work .our-work__navbar ul li a {
 	-webkit-backdrop-filter: blur(50px);
 	backdrop-filter: blur(50px);
 	font-family: "Roboto";
-	font-size: 18px;
+	font-size: var(--fz);
+	line-height: calc(120px * 1366 / 1920);
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: normal;
@@ -25,7 +26,7 @@
 	margin: 0 30px 0 0;
 	cursor: pointer;
 }
-.our-work .our-work__navbar ul li:hover {
+.our-work .our-work__navbar ul li a:hover {
 	color: #0000ff;
 }
 .our-work .our-work__content {
@@ -37,7 +38,7 @@
 }
 .our-work .our-work__content .our-work__content__left h3 {
 	font-family: "Space Mono";
-	font-size: 44px;
+	font-size: var(--heading);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -51,11 +52,11 @@
 	padding: 0 0 0 5%;
 }
 .our-work .our-work__content .our-work__content__right .our-work__item {
-	margin: 0 0 30px 0;
+	margin: 0 0 var(--margin) 0;
 }
 .our-work .our-work__content .our-work__content__right .our-work__item h3 {
 	font-family: "Roboto";
-	font-size: 30px;
+	font-size: var(--heading2);
 	font-weight: 100;
 	font-stretch: normal;
 	font-style: normal;
@@ -66,7 +67,7 @@
 }
 .our-work .our-work__content .our-work__content__right .our-work__item p {
 	font-family: "Roboto";
-	font-size: 20px;
+	font-size: var(--heading3);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;

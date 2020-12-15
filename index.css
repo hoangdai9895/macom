@@ -1,6 +1,37 @@
 :root {
 	--heading: calc(80px * 1366 / 1920);
 	--heading2: calc(40px * 1366 / 1920);
+	--heading3: calc(20px * 1366 / 1920);
+	--heading32: calc(32px * 1366 / 1920);
+	--heading24: calc(24px * 1366 / 1920);
+
+	--margin: calc(40px * 1366 / 1920);
+
+	--logoWidth: calc(190px * 1366 / 1920);
+	--menuIcon: calc(48px * 1366 / 1920);
+
+	--paddingHeader: calc(58px * 1366 / 1920);
+
+	--fz: calc(24px * 1366 / 1920);
+}
+
+@media screen and (min-width: 1920px) {
+	:root {
+		--heading: calc(80px * 1920 / 1920);
+		--heading2: calc(40px * 1920 / 1920);
+		--heading3: calc(20px * 1920 / 1920);
+		--heading32: calc(32px * 1920 / 1920);
+		--heading24: calc(24px * 1920 / 1920);
+
+		--margin: calc(40px * 1920 / 1920);
+
+		--logoWidth: calc(190px * 1920 / 1920);
+		--menuIcon: calc(48px * 1920 / 1920);
+
+		--paddingHeader: calc(58px * 1920 / 1920);
+
+		--fz: calc(24px * 1920 / 1920);
+	}
 }
 
 body,
@@ -34,34 +65,19 @@ li {
 
 .container {
 	display: flex;
-	/* max-width: 1200px; */
 	max-width: calc(100% - 88px);
 	width: 100%;
 }
 
 .menu-icon {
-	width: 28px;
-	height: 48px;
-	/* margin: 8px 13px 140px 0; */
+	width: var(--menuIcon);
+	height: var(--menuIcon);
 	object-fit: contain;
 }
 
-.main-button {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	/* margin: 25px 0 0 0; */
-	position: fixed;
-	padding: 0 10%;
-	z-index: 1000;
-	top: 10px;
-}
-
 .logo {
-	width: 150px;
+	width: var(--logoWidth);
 	height: 64px;
-	/* margin: 0 0 132px 665px; */
 	object-fit: contain;
 }
 .intro {

@@ -1,7 +1,7 @@
 .contact {
 	padding: 10%;
 	width: 100%;
-	height: calc(100vh - 39px);
+	height: calc(100vh - 34px);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -16,7 +16,7 @@
 }
 .contact .contact__info p {
 	font-family: "Space Mono";
-	font-size: 30px;
+	font-size: var(--heading2);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -61,7 +61,8 @@
 	color: #8d8d9c;
 }
 .contact .contact__form .contact__form-item input {
-	padding: 16px 331px 16px 24px;
+	padding: calc(16px * 1366 / 1920) calc(331px * 1366 / 1920)
+		calc(16px * 1366 / 1920) calc(24px * 1366 / 1920);
 	opacity: 0.56;
 	border: 1px solid transparent;
 	background-color: #383841;
@@ -70,4 +71,10 @@
 .contact .contact__form .contact__form-item input:focus {
 	border: solid 1px #0000ff;
 	outline: none;
+}
+
+@media screen and (min-width: 1920px) {
+	.contact .contact__form .contact__form-item input {
+		padding: 16px 331px 16px 24px;
+	}
 }

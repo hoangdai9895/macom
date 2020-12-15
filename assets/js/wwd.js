@@ -8,7 +8,6 @@ const BLACK_SRC_LG = "/assets/img/Type.png";
 
 $("#menu-icon-main").attr("src", WHITE_SRC);
 $(document).scroll(function () {
-	console.log(window.pageYOffset);
 	if (window.pageYOffset >= HEIGHT && window.pageYOffset <= 4 * HEIGHT) {
 		$("#menu-icon-main").attr("src", BLACK_SRC);
 		$(".logo").attr("src", BLACK_SRC_LG);
