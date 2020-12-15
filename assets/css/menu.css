@@ -34,7 +34,7 @@
 	width: 100%;
 	height: 100vh;
 	justify-content: space-between;
-	padding: 10%;
+	padding: 10% 0;
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
@@ -45,7 +45,7 @@
 }
 .menu .menu__decor img {
 	position: absolute;
-	left: 50%;
+	left: 58px;
 	transform: translateX(-50%);
 	z-index: 2;
 	background: #22222c;
@@ -55,7 +55,7 @@
 	position: absolute;
 	content: "";
 	top: 0px;
-	left: 50%;
+	left: 58px;
 	width: 2px;
 	height: 100%;
 	background: #494952;
