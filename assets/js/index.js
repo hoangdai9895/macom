@@ -7,20 +7,14 @@ setTimeout(() => {
 
 // screen 2
 let windowWidth = window.innerWidth;
-// onResize();
-document.addEventListener("resize", function () {
-	// onResize();
-});
-
-// function onResize() {
-// 	document.getElementById("screen-2__big-cricle").style.width =
-// 		(windowWidth * 8) / 10 + "px";
-// 	document.getElementById("screen-2__big-cricle").style.height =
-// 		(windowWidth * 8) / 10 + "px";
-// }
-
-//document.getElementsByTagName("body")[0].style.backgroundColor = "green";
 
 $(".menu-icon").click(function () {
 	$(".menu-wrap").toggleClass("close");
+});
+
+document.addEventListener("scroll", function () {
+	console.log(window.pageYOffset);
+	if (window.pageYOffset >= 1) {
+		window.location.href = nextHref;
+	}
 });

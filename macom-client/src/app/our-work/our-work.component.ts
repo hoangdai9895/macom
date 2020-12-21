@@ -20,6 +20,7 @@ export class OurWorkComponent implements OnInit {
       title: "Sacombank",
     },
   ];
+  
   slides = [
     { img: "/assets/img/right-img.png" },
     { img: "/assets/img/right-img.png" },
