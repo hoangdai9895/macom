@@ -1,20 +1,30 @@
-setTimeout(() => {
-	let div = document.querySelectorAll(".intro__main-content");
-	for (let i = 0; i < div.length; i++) {
-		div[i].classList.add("remove-fill-color");
-	}
-}, 7000);
-
-// screen 2
-let windowWidth = window.innerWidth;
 
 $(".menu-icon").click(function () {
 	$(".menu-wrap").toggleClass("close");
 });
 
+$(window).scrollTop(1);
+
 document.addEventListener("scroll", function () {
-	console.log(window.pageYOffset);
-	if (window.pageYOffset >= 1) {
+	if (window.pageYOffset === 0 && prevHref) {
+			window.location.href = prevHref
+	}
+	if (window.pageYOffset >= 2 && nextHref) {
 		window.location.href = nextHref;
 	}
 });
+
+$(".intro__main-content__wrap").hover(function () {
+	$(".intro__main-detail").toggleClass("hover")
+	}
+);
+
+$(".screen-4__block").hover(function () {
+	setInterval(function () {
+		$('.screen-4__block__wraper').animate({
+			scrollLeft: '+=153'
+		}, 1000);
+	}, 1000
+	)
+}
+  );
