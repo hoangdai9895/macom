@@ -15,8 +15,6 @@ $(document).scroll(function () {
 		$("#menu-icon-main").attr("src", WHITE_SRC);
 		$(".logo").attr("src", WHITE_SRC_LG);
 	}
-	console.log($(window).scrollTop() + $(window).height());
-	console.log($(document).height());
 	if (
 		Math.floor($(window).scrollTop() + $(window).height()) ===
 		$(document).height() - 1

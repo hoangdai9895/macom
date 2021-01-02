@@ -1,0 +1,7 @@
+@media (min-width: 1024px) {
+	.screen-2,
+	.screen-3,
+	.screen-4 {
+		display: none;
+	}
+}
