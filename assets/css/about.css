@@ -177,3 +177,52 @@
 	font-weight: bold;
 	color: #f9ec01;
 }
+
+/* responsive */
+
+@media (max-width: 600px) {
+	.about {
+		padding: 20% 10px 0 10px;
+	}
+	.about__info,
+	.about__intro,
+	.about__mem {
+		height: auto !important;
+	}
+	.about__info .left {
+		width: 80%;
+	}
+
+	.screen-4__title-1 {
+		margin: 0 0 0 0px;
+	}
+
+	.screen-4__text-wrap.right p {
+		font-size: 35px;
+	}
+
+	.screen-4__text-wrap p {
+		padding: 0 5px;
+	}
+
+	.about__mem {
+		padding: 0 10px;
+		height: auto;
+	}
+
+	.about .about__mem .box {
+		width: 90%;
+		height: 200px;
+	}
+
+	.about .about__intro .about__intro__content .--top {
+		width: 90%;
+	}
+	.about .about__intro .about__intro__content .--bot,
+	.about .about__mem.--ood .about__mem__wrap {
+		padding: 20px 0 0 0px;
+	}
+	.about .about__mem {
+		align-items: initial;
+	}
+}

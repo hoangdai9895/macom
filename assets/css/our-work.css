@@ -111,3 +111,37 @@ footer li,
 .footer__copy {
 	color: #4e4e4e !important;
 }
+
+/* responsive */
+@media (max-width: 600px) {
+	.our-work {
+		padding: 20% 0 0 0;
+	}
+
+	.our-work__navbar ul {
+		width: max-content;
+		padding: 0 15px;
+	}
+
+	.our-work__navbar {
+		overflow-y: auto;
+	}
+
+	.our-work__navbar ul li a {
+		line-height: 35px !important;
+	}
+	.our-work .our-work__navbar {
+		margin: 20px 0 20px 0;
+	}
+
+	.our-work__content {
+		flex-direction: column;
+	}
+	.our-work__content > div {
+		width: 100% !important;
+	}
+
+	.our-work__content {
+		padding: 0;
+	}
+}

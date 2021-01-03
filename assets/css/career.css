@@ -9,7 +9,7 @@
 }
 .career h3 {
 	font-family: "Space Mono";
-	font-size: 40px;
+	font-size: var(--heading40);
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -190,12 +190,44 @@
 	width: max-content;
 	margin: auto;
 }
+footer {
+	background: #f3f3f3;
+}
 
-/* @keyframes bigger {
-	0% {
-		transform: scale(0);
+ul.footer__info li,
+.footer__copy {
+	color: #4e4e4e;
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+	.career {
+		padding: 25% 10px 0 10px;
 	}
-	100% {
-		transform: scale(1);
+	.career__search {
+		width: 100%;
 	}
-} */
+	.career .career__search input {
+		width: 100%;
+		padding: 15px;
+	}
+	.career__content {
+		flex-direction: column;
+	}
+	.career__content > div {
+		width: 100% !important;
+	}
+	.career__popup .career__item {
+		width: calc(100% - 20px);
+	}
+	.career__popup .main {
+		margin: 0 0 15px 0;
+	}
+	.career .career__search {
+		margin: 0 0;
+	}
+	.career h3 {
+		margin: 15px 0;
+	}
+}

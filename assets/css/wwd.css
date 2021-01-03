@@ -215,3 +215,23 @@
 .items-wrap .item {
 	margin: 0 0 20% 0;
 }
+
+/* /reponsive */
+
+@media (max-width: 600px) {
+	.wwd__item {
+		flex-direction: column;
+	}
+
+	.wwd__item > div {
+		width: 100% !important;
+	}
+
+	.wwd {
+		padding: 20% 0 0 0;
+	}
+
+	.wwd__intro .ww__intro-sub-2 p {
+		padding: 0 10px;
+	}
+}

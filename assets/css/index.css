@@ -7,6 +7,7 @@
 	--heading32: calc(32px * 1366 / 1920);
 	--heading24: calc(24px * 1366 / 1920);
 	--heading64: calc(64px * 1366 / 1920);
+	--heading40: calc(40px * 1366 / 1920);
 
 	--margin: calc(40px * 1366 / 1920);
 
@@ -28,6 +29,7 @@
 		--heading32: calc(32px * 1920 / 1920);
 		--heading24: calc(24px * 1920 / 1920);
 		--heading64: calc(64px * 1920 / 1920);
+		--heading40: calc(40px * 1920 / 1920);
 
 		--margin: calc(40px * 1920 / 1920);
 
@@ -50,6 +52,7 @@
 		--heading32: calc(32px * 375 / 640);
 		--heading24: calc(24px * 375 / 640);
 		--heading64: calc(64px * 375 / 640);
+		--heading40: calc(40px * 375 / 640);
 
 		--margin: calc(40px * 375 / 640);
 
@@ -1260,5 +1263,20 @@ ul.footer__info li {
 		margin: 10px auto;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	footer {
+		flex-direction: column;
+		padding: 0 15px;
+	}
+	ul.footer__info {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+	}
+
+	ul.footer__info li {
+		margin: 0;
 	}
 }
