@@ -156,3 +156,10 @@ ul.footer__info li:first-child:before {
 		width: 100%;
 	}
 }
+
+@media (max-width: 1366px) {
+	.menu .menu__main ul li:nth-child(1),
+	.menu .menu__main ul li:nth-child(4) {
+		padding: 20px 0 10px 0;
+	}
+}
