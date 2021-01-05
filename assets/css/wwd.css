@@ -41,12 +41,12 @@
 	font-family: "Roboto";
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 1.6;
+	line-height: 38px;
 	letter-spacing: -0.38px;
 	text-align: center;
 	color: #c1c1c1;
-	padding: 0 25%;
-	font-size: calc(24px * 1366 / 1920);
+	padding: 0px 30%;
+	font-size: var(--heading24);
 }
 .wwd__intro p {
 	font-family: "Space Mono";
@@ -130,7 +130,7 @@
 	text-align: left;
 	color: #4e4e4e;
 	line-height: var(--heading32);
-	font-size: var(--heading24);
+	font-size: var(--heading20);
 }
 .wwd__item .wwd__item-left p.wwd__item-left__info {
 	font-size: var(--heading24);
@@ -167,7 +167,6 @@
 }
 
 .wwd__intro--wave {
-	/* Clip edges, as some of the lines don't terminate nicely. */
 	overflow: hidden;
 	position: relative;
 	width: 200px;
@@ -215,7 +214,47 @@
 .items-wrap .item {
 	margin: 0 0 20% 0;
 }
-
+.wwd__services {
+	width: 100%;
+	background: #0000ff;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.wwd__services h3 {
+	font-family: "Space Mono";
+	color: #fff;
+	font-size: var(--heading24);
+	text-transform: uppercase;
+}
+.wwd__services__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 15px;
+}
+.wwd__services__content ul li {
+	color: #fff;
+	font-family: "Roboto";
+	line-height: 3.2;
+}
+.wwd__services__content ul li.title {
+	color: #00ff00;
+	font-size: var(--heading24);
+	position: relative;
+	font-family: "Space Mono";
+}
+.wwd__services__content ul li.title:after {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 4px;
+	background: #fff200;
+	bottom: 5px;
+	left: 0;
+}
 /* /reponsive */
 
 @media (max-width: 600px) {

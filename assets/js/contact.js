@@ -8,3 +8,7 @@ const BLACK_SRC_LG = "/assets/img/Type.png";
 
 $("#menu-icon-main").attr("src", WHITE_SRC);
 $(".logo").attr("src", WHITE_SRC_LG);
+
+
+
+

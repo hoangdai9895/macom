@@ -1,5 +1,5 @@
 .contact {
-	padding: 10%;
+	padding: 5%;
 	width: 100%;
 	height: calc(100vh - 34px);
 	display: flex;
@@ -16,7 +16,7 @@
 }
 .contact .contact__info p {
 	font-family: "Space Mono";
-	font-size: var(--heading2);
+	font-size: var(--heading32);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -37,8 +37,8 @@
 .contact .contact__form form {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;
+	justify-content: center;
+	align-items: center;
 }
 .contact .contact__form .screen-2__btn {
 	position: static;
@@ -60,7 +60,8 @@
 	text-align: left;
 	color: #8d8d9c;
 }
-.contact .contact__form .contact__form-item input {
+.contact .contact__form .contact__form-item input,
+.contact .contact__form .contact__form-item textarea {
 	padding: calc(16px * 1366 / 1920) calc(331px * 1366 / 1920)
 		calc(16px * 1366 / 1920) calc(24px * 1366 / 1920);
 	opacity: 0.56;
@@ -68,13 +69,18 @@
 	background-color: #383841;
 	color: #fff;
 }
+.contact .contact__form .contact__form-item textarea {
+	min-height: 200px;
+}
 .contact .contact__form .contact__form-item input:focus {
 	border: solid 1px #0000ff;
 	outline: none;
 }
 
+.typed-cursor {
+	display: none;
+}
 /* responsive */
-
 @media screen and (min-width: 1920px) {
 	.contact .contact__form .contact__form-item input {
 		padding: 16px 331px 16px 24px;

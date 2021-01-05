@@ -19,7 +19,7 @@
 	height: 100vh;
 	z-index: 1111;
 	left: -100%;
-	transition: 1s ease-in-out;
+	transition: 400ms ease-out;
 }
 .menu-wrap.close {
 	left: 0;
@@ -30,19 +30,19 @@
 	width: 100%;
 	height: 100vh;
 	justify-content: space-between;
-	padding: 10% 0;
+	padding: 10% var(--paddingHeader);
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
 }
 .menu .menu__decor {
 	position: relative;
-	width: 30px;
+	width: 1px;
 }
 .menu .menu__decor img {
 	position: absolute;
-	left: 58px;
-	transform: translateX(-50%);
+	left: 20px;
+	/* transform: translateX(-50%); */
 	z-index: 2;
 	background: #22222c;
 	padding: 0 0 10px 0;
@@ -51,7 +51,7 @@
 	position: absolute;
 	content: "";
 	top: 0px;
-	left: 58px;
+	left: 25px;
 	width: 2px;
 	height: 100%;
 	background: #494952;
@@ -60,12 +60,12 @@
 }
 .menu .menu__main {
 	width: 100%;
-	padding: 0 0 0 15%;
+	padding: 0 0 0 10%;
 	display: flex;
 	justify-content: space-between;
 }
 .menu .menu__main ul li {
-	padding: 10px 0;
+	padding: 30px 0;
 }
 .menu .menu__main ul li:nth-child(1),
 .menu .menu__main ul li:nth-child(4) {
@@ -74,11 +74,12 @@
 .menu .menu__main ul li a {
 	cursor: pointer;
 	font-family: "Roboto";
-	font-size: 24px;
+	font-size: var(--heading48);
 	font-weight: 100;
 	letter-spacing: normal;
 	text-align: left;
 	color: #86868b;
+	line-height: var(--heading32);
 }
 .menu .menu__main ul li a:hover {
 	color: #fff;
