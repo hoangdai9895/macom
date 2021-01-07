@@ -21,48 +21,84 @@ $(".intro__main-content__wrap").hover(function () {
 	}
 });
 function getPosition(element) {
-    var xPosition = 0,
-        yPosition = 0;
+	var xPosition = 0,
+		yPosition = 0;
 
-    while (element) {
-        xPosition += (element.offsetLeft + element.clientLeft);
-        yPosition += (element.offsetTop + element.clientTop);
-        element = element.offsetParent;
-    }
-    return {
-        x: xPosition,
-        y: yPosition
-    };
+	while (element) {
+		xPosition += element.offsetLeft + element.clientLeft;
+		yPosition += element.offsetTop + element.clientTop;
+		element = element.offsetParent;
+	}
+	return {
+		x: xPosition,
+		y: yPosition,
+	};
 }
 
 function getScroll() {
-    return {
-        x: document.documentElement.scrollLeft || document.body.scrollLeft,
-        y: document.documentElement.scrollTop || document.body.scrollTop
-    };
+	return {
+		x: document.documentElement.scrollLeft || document.body.scrollLeft,
+		y: document.documentElement.scrollTop || document.body.scrollTop,
+	};
 }
 
 function getWindowOffset(element) {
-    var pos = getPosition(element),
-    scroll = getScroll();
+	var pos = getPosition(element),
+		scroll = getScroll();
 
-    return {
-            x: (pos.x - scroll.x),
-            y: (pos.y - scroll.y)
-    };
+	return {
+		x: pos.x - scroll.x,
+		y: pos.y - scroll.y,
+	};
 }
 
-$("body").mousemove(function(e) {
+$("body").mousemove(function (e) {
 	// console.log(e.pageX, e.pageY)
-	var element = document.querySelector('.dot-fill.dot-3 .dot .circle');
-	var topPos = element.getBoundingClientRect().top 
-	var leftPos = element.getBoundingClientRect().left 
-	$(".dot__info__3").css("top", topPos - 38 + "px")
-	$(".dot__info__3").css("left", leftPos + 0 + "px")
+	// var element = document.querySelector(".dot-fill.dot-3 .dot .circle");
+	// var topPos = element.getBoundingClientRect().top;
+	// var leftPos = element.getBoundingClientRect().left;
+
+	calcPosition("dot-3", "dot__info__3");
+
+	calcPosition("dot-2", "dot__info__2");
+
+	calcPosition("dot-1", "dot__info__1");
+
+	// $(".dot__info__3").css("top", topPos - 40 + "px");
+	// $(".dot__info__3").css("left", leftPos + 0 + "px");
+
+	// $(".dot__info__2").css("top", topPos - 40 + "px");
+	// $(".dot__info__2").css("left", leftPos + 0 + "px");
+
+	// $(".dot__info__1").css("top", topPos - 40 + "px");
+	// $(".dot__info__1").css("left", leftPos + 0 + "px");
 });
 
-$(".dot-3 .dot").hover(function(){
-	$(".dot__info__3").toggleClass("active") 
-})
+function calcPosition(dotNumber, dotInfo) {
+	const element = document.querySelector(
+		".dot-fill." + dotNumber + " .dot .circle"
+	);
+	const topPos = element.getBoundingClientRect().top;
+	const leftPos = element.getBoundingClientRect().left;
 
+	$("." + dotInfo).css("top", topPos - 40 + "px");
+	$("." + dotInfo).css("left", leftPos + 0 + "px");
+}
 
+$(".dot-3 .dot").hover(function () {
+	$(".dot__info__3").toggleClass("active");
+	$(".dot__info__1").removeClass("active");
+	$(".dot__info__2").removeClass("active");
+});
+
+$(".dot-2 .dot").hover(function () {
+	$(".dot__info__2").toggleClass("active");
+	$(".dot__info__1").removeClass("active");
+	$(".dot__info__3").removeClass("active");
+});
+
+$(".dot-1 .dot").hover(function () {
+	$(".dot__info__1").toggleClass("active");
+	$(".dot__info__3").removeClass("active");
+	$(".dot__info__2").removeClass("active");
+});
