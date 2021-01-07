@@ -62,7 +62,7 @@ $("body").mousemove(function(e) {
 });
 
 $(".dot-3 .dot").hover(function(){
-	$(".dot__info__3").toggleClass("active")
+	$(".dot__info__3").toggleClass("active") 
 })
 
 
