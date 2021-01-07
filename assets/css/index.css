@@ -122,15 +122,6 @@ html,
 	text-decoration: none;
 }
 
-.dot__info__title {
-	color: #00ff00;
-	font-family: "Space Mono";
-	font-size: var(--heading20);
-	position: absolute;
-	top: -23px;
-	right: -13px;
-}
-
 .w-30 {
 	width: 30% !important;
 }
@@ -988,22 +979,22 @@ ul.footer__info li {
 	height: 100%;
 	position: relative;
 	/* transform: rotate(60deg); */
-	animation: rotate1 10s infinite ease-out;
+	animation: rotate1 40s infinite ease-out;
 }
 .dot-2 .dot {
 	height: 100%;
 	position: relative;
 	/* transform: rotate(180deg); */
-	animation: rotate1 15s infinite ease-in;
+	animation: rotate1 45s infinite ease-in;
 }
 .dot-3 .dot {
 	height: 100%;
 	position: relative;
 	transform: rotate(270deg);
-	animation: rotate1 20s infinite ease-out;
+	animation: rotate1 50s infinite ease-out;
 }
 
-.dot-1 .dot:before {
+.dot-1 .dot .circle {
 	content: "";
 	background: #fff200;
 	width: calc(20px * 1355 / 1920);
@@ -1014,7 +1005,7 @@ ul.footer__info li {
 	left: 39px;
 }
 
-.dot-2 .dot:before {
+.dot-2 .dot .circle {
 	content: "";
 	background: #ec008c;
 	width: calc(20px * 1355 / 1920);
@@ -1051,6 +1042,17 @@ ul.footer__info li {
 	/* animation: rotate1reverse 20s infinite ease-out; */
 }
 
+.dot__info__3 {
+}
+
+.dot__info__2 {
+	width: 282px;
+}
+
+.dot__info__1 {
+	width: 292px;
+}
+
 .dot__info__list {
 	position: absolute;
 	left: 23%;
@@ -1062,6 +1064,7 @@ ul.footer__info li {
 
 .dot__info__list p {
 	padding: 5px 0;
+	font-size: 16px;
 }
 
 .dot__info.dot__info__3 {
@@ -1075,12 +1078,45 @@ ul.footer__info li {
 	width: 20%;
 	content: "";
 	height: 2px;
-	background: #00ff00;
+
 	position: absolute;
 	transform: rotate(-45deg);
 	top: calc(50% + 2px);
 	left: 6px;
 }
+
+.dot__info__3:before {
+	background: #00ff00;
+}
+
+.dot__info__2:before {
+	background: #ec008c;
+}
+
+.dot__info__1:before {
+	background: #fff200;
+}
+
+.dot__info__title {
+	font-family: "Space Mono";
+	font-size: var(--heading24);
+	position: absolute;
+	top: -23px;
+	right: -13px;
+}
+
+.dot__info__3 .dot__info__title {
+	color: #00ff00;
+}
+
+.dot__info__2 .dot__info__title {
+	color: #ec008c;
+}
+
+.dot__info__1 .dot__info__title {
+	color: #fff200;
+}
+
 .dot__info:after {
 	width: 85%;
 	content: "";
@@ -1089,6 +1125,18 @@ ul.footer__info li {
 	position: absolute;
 	right: -12px;
 	top: 6px;
+}
+
+.dot__info__1:after {
+	background: #fff200;
+}
+
+.dot__info__2:after {
+	background: #ec008c;
+}
+
+.dot__info__3:after {
+	background: #00ff00;
 }
 
 /* responsive */
