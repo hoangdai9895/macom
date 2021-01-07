@@ -209,7 +209,7 @@
 .items-wrap {
 	height: 100%;
 	overflow-y: scroll;
-	padding: 5%;
+	padding: 5% 10%;
 }
 .items-wrap .item {
 	margin: 0 0 20% 0;
@@ -255,6 +255,7 @@
 	bottom: 5px;
 	left: 0;
 }
+
 /* /reponsive */
 
 @media (max-width: 600px) {
