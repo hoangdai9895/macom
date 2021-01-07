@@ -688,6 +688,7 @@ p.screen-2__main-text {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	overflow: hidden;
 }
 
 h3.screen-3__heading.heading {
