@@ -177,5 +177,43 @@
 			const prevHref = "./index.html";
 		</script>
 		<script src="./assets/js/index.js"></script>
+		<script>
+			$("body").mousemove(function (e) {
+				calcPosition("dot-3", "dot__info__3");
+
+				calcPosition("dot-2", "dot__info__2");
+
+				calcPosition("dot-1", "dot__info__1");
+			});
+
+			function calcPosition(dotNumber, dotInfo) {
+				const element = document.querySelector(
+					".dot-fill." + dotNumber + " .dot .circle"
+				);
+				const topPos = element.getBoundingClientRect().top;
+				const leftPos = element.getBoundingClientRect().left;
+
+				$("." + dotInfo).css("top", topPos - 40 + "px");
+				$("." + dotInfo).css("left", leftPos + 0 + "px");
+			}
+
+			$(".dot-3 .dot").hover(function () {
+				$(".dot__info__3").toggleClass("active");
+				$(".dot__info__1").removeClass("active");
+				$(".dot__info__2").removeClass("active");
+			});
+
+			$(".dot-2 .dot").hover(function () {
+				$(".dot__info__2").toggleClass("active");
+				$(".dot__info__1").removeClass("active");
+				$(".dot__info__3").removeClass("active");
+			});
+
+			$(".dot-1 .dot").hover(function () {
+				$(".dot__info__1").toggleClass("active");
+				$(".dot__info__3").removeClass("active");
+				$(".dot__info__2").removeClass("active");
+			});
+		</script>
 	</body>
 </html>

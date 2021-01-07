@@ -4,101 +4,37 @@ $(".menu-icon").click(function () {
 
 $(window).scrollTop(1);
 
-// document.addEventListener("scroll", function () {
-// 	if (window.innerWidth > 1024) {
-// 		if (window.pageYOffset === 0 && prevHref) {
-// 			window.location.href = prevHref;
-// 		}
-// 		if (window.pageYOffset >= 2 && nextHref) {
-// 			window.location.href = nextHref;
-// 		}
-// 	}
-// });
+document.addEventListener("scroll", function () {
+	if (window.innerWidth > 1024) {
+		if (window.pageYOffset === 0 && prevHref) {
+			window.location.href = prevHref;
+		}
+		if (window.pageYOffset >= 2 && nextHref) {
+			window.location.href = nextHref;
+		}
+	}
+});
 
 $(".intro__main-content__wrap").hover(function () {
 	if (window.innerWidth >= 1024) {
 		$(".intro__main-detail").toggleClass("hover");
 	}
 });
-function getPosition(element) {
-	var xPosition = 0,
-		yPosition = 0;
 
-	while (element) {
-		xPosition += element.offsetLeft + element.clientLeft;
-		yPosition += element.offsetTop + element.clientTop;
-		element = element.offsetParent;
-	}
-	return {
-		x: xPosition,
-		y: yPosition,
-	};
-}
+$(".screen-3__list li").each(function () {
+	$(this).click(function () {
+		$(".screen-3-right__img").removeClass("animate__slideInDown");
+		$(".screen-3-right__img").addClass("animate__slideOutDown");
+		$(".screen-3-right__img").on("animationend", function () {
+			$(".screen-3-right__img").removeClass(" animate__slideOutDown");
+			$(".screen-3-right__img").addClass(" animate__slideInDown");
+		});
 
-function getScroll() {
-	return {
-		x: document.documentElement.scrollLeft || document.body.scrollLeft,
-		y: document.documentElement.scrollTop || document.body.scrollTop,
-	};
-}
-
-function getWindowOffset(element) {
-	var pos = getPosition(element),
-		scroll = getScroll();
-
-	return {
-		x: pos.x - scroll.x,
-		y: pos.y - scroll.y,
-	};
-}
-
-$("body").mousemove(function (e) {
-	// console.log(e.pageX, e.pageY)
-	// var element = document.querySelector(".dot-fill.dot-3 .dot .circle");
-	// var topPos = element.getBoundingClientRect().top;
-	// var leftPos = element.getBoundingClientRect().left;
-
-	calcPosition("dot-3", "dot__info__3");
-
-	calcPosition("dot-2", "dot__info__2");
-
-	calcPosition("dot-1", "dot__info__1");
-
-	// $(".dot__info__3").css("top", topPos - 40 + "px");
-	// $(".dot__info__3").css("left", leftPos + 0 + "px");
-
-	// $(".dot__info__2").css("top", topPos - 40 + "px");
-	// $(".dot__info__2").css("left", leftPos + 0 + "px");
-
-	// $(".dot__info__1").css("top", topPos - 40 + "px");
-	// $(".dot__info__1").css("left", leftPos + 0 + "px");
-});
-
-function calcPosition(dotNumber, dotInfo) {
-	const element = document.querySelector(
-		".dot-fill." + dotNumber + " .dot .circle"
-	);
-	const topPos = element.getBoundingClientRect().top;
-	const leftPos = element.getBoundingClientRect().left;
-
-	$("." + dotInfo).css("top", topPos - 40 + "px");
-	$("." + dotInfo).css("left", leftPos + 0 + "px");
-}
-
-$(".dot-3 .dot").hover(function () {
-	$(".dot__info__3").toggleClass("active");
-	$(".dot__info__1").removeClass("active");
-	$(".dot__info__2").removeClass("active");
-});
-
-$(".dot-2 .dot").hover(function () {
-	$(".dot__info__2").toggleClass("active");
-	$(".dot__info__1").removeClass("active");
-	$(".dot__info__3").removeClass("active");
-});
-
-$(".dot-1 .dot").hover(function () {
-	$(".dot__info__1").toggleClass("active");
-	$(".dot__info__3").removeClass("active");
-	$(".dot__info__2").removeClass("active");
+		// setTimeout(function () {
+		// 	$(".screen-3-right__img").addClass(" animate__slideInDown");
+		// }, 250);
+		// setTimeout(function () {
+		// 	$(".screen-3-right__img").removeClass(" animate__slideOutDown");
+		// });
+	});
 });
