@@ -178,13 +178,33 @@
 		</script>
 		<script src="./assets/js/index.js"></script>
 		<script>
-			$("body").mousemove(function (e) {
-				calcPosition("dot-3", "dot__info__3");
+			// $(".dot-fill.dot-3 .dot .circle").hover(function () {
+			// 	console.log("2222222222");
+			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+			// 	calcPosition("dot-3", "dot__info__3");
+			// });
+			// $(".dot-fill.dot-3 .dot .circle").mousemove(function () {
+			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+			// 	calcPosition("dot-3", "dot__info__3");
+			// });
 
-				calcPosition("dot-2", "dot__info__2");
+			// $(".dot-3").mousemove(function (e) {
+			// 	console.log("22222222222");
+			// 	$(".dot-fill.dot-3 .dot").addBack("animate-paused");
+			// });
 
-				calcPosition("dot-1", "dot__info__1");
-			});
+			// $(".dot-3").mouseleave(function (e) {
+			// 	console.log("3333");
+			// 	$(".dot-fill.dot-3 .dot").removeClass("animate-paused");
+			// });
+			// $(".dot-fill").mousemove(function (e) {
+			// 	console.log(e.currentTarget.classList[1]);
+			// 	calcPosition("dot-3", "dot__info__3");
+
+			// 	calcPosition("dot-2", "dot__info__2");
+
+			// 	calcPosition("dot-1", "dot__info__1");
+			// });
 
 			function calcPosition(dotNumber, dotInfo) {
 				const element = document.querySelector(
@@ -198,18 +218,25 @@
 			}
 
 			$(".dot-3 .dot").hover(function () {
+				$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+				calcPosition("dot-3", "dot__info__3");
 				$(".dot__info__3").toggleClass("active");
 				$(".dot__info__1").removeClass("active");
 				$(".dot__info__2").removeClass("active");
 			});
 
 			$(".dot-2 .dot").hover(function () {
+				console.log("222");
+				$(".dot-fill.dot-2 .dot").toggleClass("animate-paused");
+				calcPosition("dot-2", "dot__info__2");
 				$(".dot__info__2").toggleClass("active");
 				$(".dot__info__1").removeClass("active");
 				$(".dot__info__3").removeClass("active");
 			});
 
 			$(".dot-1 .dot").hover(function () {
+				$(".dot-fill.dot-1 .dot").toggleClass("animate-paused");
+				calcPosition("dot-1", "dot__info__1");
 				$(".dot__info__1").toggleClass("active");
 				$(".dot__info__3").removeClass("active");
 				$(".dot__info__2").removeClass("active");
