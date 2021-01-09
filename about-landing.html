@@ -151,7 +151,7 @@
 										<div
 											class="screen-4__block-item__title"
 										>
-											<h3>Tên thành viên</h3>
+											<h3>Tên thành viên 1</h3>
 											<p>Vị trí</p>
 											<p>Giới thiệu bản thân</p>
 										</div>
@@ -165,7 +165,7 @@
 										<div
 											class="screen-4__block-item__title"
 										>
-											<h3>Tên thành viên</h3>
+											<h3>Tên thành viên 2</h3>
 											<p>Vị trí</p>
 											<p>Giới thiệu bản thân</p>
 										</div>
@@ -185,7 +185,7 @@
 										<div
 											class="screen-4__block-item__title"
 										>
-											<h3>Tên thành viên</h3>
+											<h3>Tên thành viên 3</h3>
 											<p>Vị trí</p>
 											<p>Giới thiệu bản thân</p>
 										</div>
@@ -202,7 +202,7 @@
 										<div
 											class="screen-4__block-item__title"
 										>
-											<h3>Tên thành viên</h3>
+											<h3>Tên thành viên 4</h3>
 											<p>Vị trí</p>
 											<p>Giới thiệu bản thân</p>
 										</div>
@@ -254,10 +254,9 @@
 		<script>
 			$(document).ready(function () {
 				$(".slides").slick({
-					infinite: true,
 					slidesToShow: 3,
-					slidesToScroll: 2,
-					autoplay: true,
+					slidesToScroll: 1,
+					infinite: false,
 					arrows: false,
 					dots: false,
 					cssEase: "linear",
@@ -266,6 +265,14 @@
 						"<img src='./assets/img/arr-left.png' class='slide-arr arr-left'/>",
 					nextArrow:
 						"<img src='./assets/img/arr-right.png' class='slide-arr arr-right'/>",
+				});
+
+				$(".slide-item").click(function () {
+					console.log("222");
+					$(".slide-item").each(function () {
+						$(this).removeClass("order1");
+					});
+					$(this).addClass("order1");
 				});
 			});
 		</script>
