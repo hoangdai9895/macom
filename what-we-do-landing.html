@@ -217,7 +217,7 @@
 				$("." + dotInfo).css("left", leftPos + 0 + "px");
 			}
 
-			$(".dot-3 .dot").hover(function () {
+			$(".dot-3 .dot .circle").hover(function () {
 				$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
 				calcPosition("dot-3", "dot__info__3");
 				$(".dot__info__3").toggleClass("active");
@@ -225,7 +225,7 @@
 				$(".dot__info__2").removeClass("active");
 			});
 
-			$(".dot-2 .dot").hover(function () {
+			$(".dot-2 .dot .circle").hover(function () {
 				console.log("222");
 				$(".dot-fill.dot-2 .dot").toggleClass("animate-paused");
 				calcPosition("dot-2", "dot__info__2");
@@ -234,7 +234,7 @@
 				$(".dot__info__3").removeClass("active");
 			});
 
-			$(".dot-1 .dot").hover(function () {
+			$(".dot-1 .dot .circle").hover(function () {
 				$(".dot-fill.dot-1 .dot").toggleClass("animate-paused");
 				calcPosition("dot-1", "dot__info__1");
 				$(".dot__info__1").toggleClass("active");

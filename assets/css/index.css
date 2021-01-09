@@ -830,8 +830,8 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 
 .screen-4__block {
-	display: flex;
-	width: 5000px;
+	/* display: flex; */
+	width: 100%;
 }
 
 .screen-4__text-wrap p {
@@ -854,7 +854,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 	position: relative;
 }
 .screen-4__block-item {
-	width: 400px;
+	/* width: 400px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
