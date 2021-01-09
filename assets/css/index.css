@@ -1145,6 +1145,17 @@ ul.footer__info li {
 	background: #00ff00;
 }
 
+.order1 {
+	order: -1;
+}
+.slick-track {
+	display: flex !important;
+}
+
+.slide-item:focus {
+	outline: unset !important;
+}
+
 /* responsive */
 @media (min-width: 1204px) and (max-width: 1366px) {
 	.intro__main-detail {
