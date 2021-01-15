@@ -13,10 +13,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./assets/css/index.css" />
 		<link rel="stylesheet" href="./assets/css/menu.css" />
 	</head>
@@ -94,6 +92,24 @@
 					<p>Application</p>
 				</div>
 			</div>
+
+			<div class="dot__info dot__info__2">
+				<div class="dot__info__title">Branding & Strategy</div>
+				<div class="dot__info__list">
+					<p>E-commerce Campaign</p>
+					<p>Lead Generation</p>
+					<p>Application</p>
+				</div>
+			</div>
+
+			<div class="dot__info dot__info__1">
+				<div class="dot__info__title">Digital Creativer</div>
+				<div class="dot__info__list">
+					<p>E-commerce Campaign</p>
+					<p>Lead Generation</p>
+					<p>Application</p>
+				</div>
+			</div>
 			<div class="opening-screen screen-2">
 				<div class="dot-fill dot-3">
 					<div class="dot">
@@ -102,11 +118,15 @@
 				</div>
 
 				<div class="dot-fill dot-1">
-					<div class="dot"></div>
+					<div class="dot">
+						<div class="circle"></div>
+					</div>
 				</div>
 
 				<div class="dot-fill dot-2">
-					<div class="dot"></div>
+					<div class="dot">
+						<div class="circle"></div>
+					</div>
 				</div>
 
 				<div class="screen-2__big-cricle" id="screen-2__big-cricle">
@@ -155,5 +175,70 @@
 			const prevHref = "./index.html";
 		</script>
 		<script src="./assets/js/index.js"></script>
+		<script>
+			// $(".dot-fill.dot-3 .dot .circle").hover(function () {
+			// 	console.log("2222222222");
+			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+			// 	calcPosition("dot-3", "dot__info__3");
+			// });
+			// $(".dot-fill.dot-3 .dot .circle").mousemove(function () {
+			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+			// 	calcPosition("dot-3", "dot__info__3");
+			// });
+
+			// $(".dot-3").mousemove(function (e) {
+			// 	console.log("22222222222");
+			// 	$(".dot-fill.dot-3 .dot").addBack("animate-paused");
+			// });
+
+			// $(".dot-3").mouseleave(function (e) {
+			// 	console.log("3333");
+			// 	$(".dot-fill.dot-3 .dot").removeClass("animate-paused");
+			// });
+			// $(".dot-fill").mousemove(function (e) {
+			// 	console.log(e.currentTarget.classList[1]);
+			// 	calcPosition("dot-3", "dot__info__3");
+
+			// 	calcPosition("dot-2", "dot__info__2");
+
+			// 	calcPosition("dot-1", "dot__info__1");
+			// });
+
+			function calcPosition(dotNumber, dotInfo) {
+				const element = document.querySelector(
+					".dot-fill." + dotNumber + " .dot .circle"
+				);
+				const topPos = element.getBoundingClientRect().top;
+				const leftPos = element.getBoundingClientRect().left;
+
+				$("." + dotInfo).css("top", topPos - 40 + "px");
+				$("." + dotInfo).css("left", leftPos + 0 + "px");
+			}
+
+			$(".dot-3 .dot .circle").hover(function () {
+				$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
+				calcPosition("dot-3", "dot__info__3");
+				$(".dot__info__3").toggleClass("active");
+				$(".dot__info__1").removeClass("active");
+				$(".dot__info__2").removeClass("active");
+			});
+
+			$(".dot-2 .dot .circle").hover(function () {
+				console.log("222");
+				$(".dot-fill.dot-2 .dot").toggleClass("animate-paused");
+				calcPosition("dot-2", "dot__info__2");
+				$(".dot__info__2").toggleClass("active");
+				$(".dot__info__1").removeClass("active");
+				$(".dot__info__3").removeClass("active");
+			});
+
+			$(".dot-1 .dot .circle").hover(function () {
+				$(".dot-fill.dot-1 .dot").toggleClass("animate-paused");
+				calcPosition("dot-1", "dot__info__1");
+				$(".dot__info__1").toggleClass("active");
+				$(".dot__info__3").removeClass("active");
+				$(".dot__info__2").removeClass("active");
+			});
+		</script>
 	</body>
 </html>

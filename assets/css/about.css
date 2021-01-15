@@ -4,7 +4,7 @@
 	width: 2px;
 	position: absolute;
 	left: 50%;
-	top: 170px;
+	top: 200px;
 	background: #0000ff;
 }
 
@@ -34,7 +34,7 @@
 
 .about {
 	background: #22222c;
-	padding: 5% 10%;
+	padding: 10% 10%;
 }
 .about .about__intro {
 	width: 100%;
@@ -48,7 +48,7 @@
 	height: 239px;
 }
 .about .about__intro .about__intro__content .--bot {
-	padding: 10% 10% 0 30%;
+	padding: 13% 10% 0 30%;
 }
 .about .about__intro .about__intro__content .--bot h3 {
 	font-family: "Space Mono";
@@ -118,6 +118,7 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
+	justify-content: space-between;
 }
 
 .about__info a {
@@ -137,7 +138,7 @@
 	font-weight: 300;
 	font-family: "Roboto";
 	font-size: var(--heading24);
-	line-height: calc(38.4px * 1366 / 1920);
+	line-height: var(--lh38);
 	margin: 0 0 20px 0;
 	color: #c8c8c8;
 }
@@ -176,6 +177,10 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #f9ec01;
+}
+
+.about__info .lef {
+	max-width: 800px;
 }
 
 /* responsive */

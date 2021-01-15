@@ -16,7 +16,7 @@
 }
 .contact .contact__info p {
 	font-family: "Space Mono";
-	font-size: var(--heading32);
+	font-size: var(--heading40);
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -25,14 +25,27 @@
 	text-align: left;
 	color: #8d8d9c;
 	margin: 0 0 30px 0;
+	min-height: 96px;
 }
 .contact .contact__info p.sub {
-	font-size: 24px;
+	/* font-size: 24px; */
 	color: #fff;
+	min-height: unset;
+	position: relative;
+}
+
+.contact .contact__info p.sub:before {
+	position: absolute;
+	content: "";
+	width: 58px;
+	height: 4px;
+	background: #00ff00;
+	right: 133px;
+	bottom: -2px;
 }
 .contact .contact__form {
 	width: 50%;
-	padding: 5% 10%;
+	padding: 5% 10% 0 10%;
 }
 .contact .contact__form form {
 	display: flex;
@@ -70,7 +83,7 @@
 	color: #fff;
 }
 .contact .contact__form .contact__form-item textarea {
-	min-height: 200px;
+	min-height: 100px;
 }
 .contact .contact__form .contact__form-item input:focus {
 	border: solid 1px #0000ff;
@@ -80,6 +93,42 @@
 .typed-cursor {
 	display: none;
 }
+
+.conntact__button-container {
+	width: 100%;
+	padding: 10px 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.conntact__button-container p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+.conntact__button-container p.success {
+	color: #48e0ff;
+}
+.conntact__button-container p.error {
+	color: #fc4646;
+}
+
+.d-none {
+	display: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
 /* responsive */
 @media screen and (min-width: 1920px) {
 	.contact .contact__form .contact__form-item input {

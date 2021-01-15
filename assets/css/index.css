@@ -11,6 +11,8 @@
 	--heading40: calc(40px * 1366 / 1920);
 	--heading48: calc(48px * 1366 / 1920);
 
+	--lh38: calc(38.4px * 1366 / 1920);
+
 	--margin: calc(40px * 1366 / 1920);
 
 	--logoWidth: calc(190px * 1366 / 1920);
@@ -35,6 +37,8 @@
 		--heading40: calc(40px * 1920 / 1920);
 		--heading48: calc(48px * 1920 / 1920);
 
+		--lh38: calc(38.4px * 1920 / 1920);
+
 		--margin: calc(40px * 1920 / 1920);
 
 		--logoWidth: calc(190px * 1920 / 1920);
@@ -58,7 +62,9 @@
 		--heading24: calc(24px * 375 / 640);
 		--heading64: calc(64px * 375 / 640);
 		--heading40: calc(40px * 375 / 640);
-		--heading48: calc(48px * 375 / 640);
+		--heading48: calc(48px * 375 / 375);
+
+		--lh38: calc(38.4px * 375 / 1920);
 
 		--margin: calc(40px * 375 / 640);
 
@@ -120,15 +126,6 @@ html,
 	margin: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-}
-
-.dot__info__title {
-	color: #00ff00;
-	font-family: "Space Mono";
-	font-size: var(--heading20);
-	position: absolute;
-	top: -23px;
-	right: -13px;
 }
 
 .w-30 {
@@ -534,7 +531,7 @@ li {
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
 }
-.dot-3 .dot:hover {
+/* .dot-3 .dot:hover {
 	animation-play-state: paused;
 }
 
@@ -544,8 +541,10 @@ li {
 
 .dot-2 .dot:hover {
 	animation-play-state: paused;
+} */
+.animate-paused {
+	animation-play-state: paused !important;
 }
-
 /* screen 2 */
 
 @keyframes resizeCircle {
@@ -697,6 +696,7 @@ p.screen-2__main-text {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	overflow: hidden;
 }
 
 h3.screen-3__heading.heading {
@@ -836,8 +836,8 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 
 .screen-4__block {
-	display: flex;
-	width: 5000px;
+	/* display: flex; */
+	width: 100%;
 }
 
 .screen-4__text-wrap p {
@@ -860,7 +860,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 	position: relative;
 }
 .screen-4__block-item {
-	width: 400px;
+	/* width: 400px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -988,22 +988,22 @@ ul.footer__info li {
 	height: 100%;
 	position: relative;
 	/* transform: rotate(60deg); */
-	animation: rotate1 10s infinite ease-out;
+	animation: rotate1 40s infinite ease-out;
 }
 .dot-2 .dot {
 	height: 100%;
 	position: relative;
 	/* transform: rotate(180deg); */
-	animation: rotate1 15s infinite ease-in;
+	animation: rotate1 45s infinite ease-in;
 }
 .dot-3 .dot {
 	height: 100%;
 	position: relative;
 	transform: rotate(270deg);
-	animation: rotate1 20s infinite ease-out;
+	animation: rotate1 50s infinite ease-out;
 }
 
-.dot-1 .dot:before {
+.dot-1 .dot .circle {
 	content: "";
 	background: #fff200;
 	width: calc(20px * 1355 / 1920);
@@ -1014,7 +1014,7 @@ ul.footer__info li {
 	left: 39px;
 }
 
-.dot-2 .dot:before {
+.dot-2 .dot .circle {
 	content: "";
 	background: #ec008c;
 	width: calc(20px * 1355 / 1920);
@@ -1051,6 +1051,19 @@ ul.footer__info li {
 	/* animation: rotate1reverse 20s infinite ease-out; */
 }
 
+.dot__info__3 {
+}
+
+.dot__info__2 {
+	width: 282px;
+	z-index: 1;
+}
+
+.dot__info__1 {
+	width: 292px;
+	z-index: 1;
+}
+
 .dot__info__list {
 	position: absolute;
 	left: 23%;
@@ -1062,10 +1075,12 @@ ul.footer__info li {
 
 .dot__info__list p {
 	padding: 5px 0;
+	font-size: 16px;
 }
 
 .dot__info.dot__info__3 {
 	width: 299px;
+	z-index: 1;
 }
 .dot__info.active {
 	opacity: 1;
@@ -1075,12 +1090,45 @@ ul.footer__info li {
 	width: 20%;
 	content: "";
 	height: 2px;
-	background: #00ff00;
+
 	position: absolute;
 	transform: rotate(-45deg);
 	top: calc(50% + 2px);
 	left: 6px;
 }
+
+.dot__info__3:before {
+	background: #00ff00;
+}
+
+.dot__info__2:before {
+	background: #ec008c;
+}
+
+.dot__info__1:before {
+	background: #fff200;
+}
+
+.dot__info__title {
+	font-family: "Space Mono";
+	font-size: var(--heading24);
+	position: absolute;
+	top: -23px;
+	right: -13px;
+}
+
+.dot__info__3 .dot__info__title {
+	color: #00ff00;
+}
+
+.dot__info__2 .dot__info__title {
+	color: #ec008c;
+}
+
+.dot__info__1 .dot__info__title {
+	color: #fff200;
+}
+
 .dot__info:after {
 	width: 85%;
 	content: "";
@@ -1089,6 +1137,29 @@ ul.footer__info li {
 	position: absolute;
 	right: -12px;
 	top: 6px;
+}
+
+.dot__info__1:after {
+	background: #fff200;
+}
+
+.dot__info__2:after {
+	background: #ec008c;
+}
+
+.dot__info__3:after {
+	background: #00ff00;
+}
+
+.order1 {
+	order: -1;
+}
+.slick-track {
+	display: flex !important;
+}
+
+.slide-item:focus {
+	outline: unset !important;
 }
 
 /* responsive */
