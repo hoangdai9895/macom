@@ -1,6 +1,6 @@
 .our-work {
 	width: 100%;
-	padding: 5% 10%;
+	padding: 7% 10%;
 }
 .our-work .our-work__navbar {
 	margin: 0 0 50px 0;
@@ -25,6 +25,7 @@
 	display: inline-block;
 	margin: 0 30px 0 0;
 	cursor: pointer;
+	transition: 250ms;
 }
 .our-work .our-work__navbar ul li a:hover {
 	color: #0000ff;
@@ -35,6 +36,7 @@
 }
 .our-work .our-work__content .our-work__content__left {
 	width: 40%;
+	position: relative;
 }
 .our-work .our-work__content .our-work__content__left h3 {
 	font-family: "Space Mono";
@@ -46,6 +48,8 @@
 	letter-spacing: normal;
 	text-align: left;
 	color: #b7b7b7;
+	position: absolute;
+	top: -28px;
 }
 .our-work .our-work__content .our-work__content__right {
 	width: 60%;
@@ -110,6 +114,13 @@ footer {
 footer li,
 .footer__copy {
 	color: #4e4e4e !important;
+}
+
+.our-work__content__slide {
+	max-width: 400px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 /* responsive */

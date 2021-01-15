@@ -11,6 +11,8 @@
 	--heading40: calc(40px * 1366 / 1920);
 	--heading48: calc(48px * 1366 / 1920);
 
+	--lh38: calc(38.4px * 1366 / 1920);
+
 	--margin: calc(40px * 1366 / 1920);
 
 	--logoWidth: calc(190px * 1366 / 1920);
@@ -35,6 +37,8 @@
 		--heading40: calc(40px * 1920 / 1920);
 		--heading48: calc(48px * 1920 / 1920);
 
+		--lh38: calc(38.4px * 1920 / 1920);
+
 		--margin: calc(40px * 1920 / 1920);
 
 		--logoWidth: calc(190px * 1920 / 1920);
@@ -58,7 +62,9 @@
 		--heading24: calc(24px * 375 / 640);
 		--heading64: calc(64px * 375 / 640);
 		--heading40: calc(40px * 375 / 640);
-		--heading48: calc(48px * 375 / 640);
+		--heading48: calc(48px * 375 / 375);
+
+		--lh38: calc(38.4px * 375 / 1920);
 
 		--margin: calc(40px * 375 / 640);
 

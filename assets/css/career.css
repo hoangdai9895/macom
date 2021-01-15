@@ -1,7 +1,13 @@
+.main-button {
+	/* position: sticky; */
+	/* top: 0; */
+	/* background: transparent; */
+	/* overflow: hidden; */
+}
 .career {
 	width: 100%;
 	height: auto;
-	padding: 5% 10%;
+	padding: 0 10%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -18,8 +24,21 @@
 	text-align: center;
 	color: #0000ff;
 }
+
+.career .heading {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f3f3f3;
+	overflow: hidden;
+	padding: 122px 0 0 0;
+}
+
 .career .career__search {
-	margin: 30px 0;
+	margin: 20px 0;
 	position: relative;
 }
 .career .career__search img.search {
@@ -41,7 +60,7 @@
 	outline: none;
 }
 .career .career__content {
-	padding: 20px 0 0 0;
+	padding: 20px 10px 0 10px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -53,7 +72,7 @@
 	background: #fff;
 	padding: 28px 30px 24px 31px;
 	border-radius: 4px;
-	box-shadow: 4px 4px 24px 0 rgba(0, 0, 0, 0.09);
+	box-shadow: -2px 0px 9px 0 rgba(0, 0, 0, 0.09);
 }
 .career .career__item .career__item__view {
 	display: flex;
@@ -69,6 +88,7 @@
 	letter-spacing: normal;
 	text-align: left;
 	color: #0000ff;
+	margin: 0 10px 0 0;
 }
 .career .career__item .career__item__title {
 	font-family: "Roboto";
@@ -118,11 +138,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transform: scale(0);
+	/* transform: scale(0); */
 	transition: 400ms ease-in-out;
+	visibility: hidden;
 }
-.career__popup:before {
+/* .career__popup:before {
 	content: "";
+	
+} */
+.overlay {
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -130,10 +154,13 @@
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transition: 400ms;
 }
 .career__popup .main {
 	height: 100%;
-	overflow-y: scroll;
+	overflow-y: auto;
 	/* width */
 	/* Track */
 	/* Handle */
@@ -160,10 +187,23 @@
 	display: inline-block;
 	display: flex;
 	flex-direction: column;
+	transform: scale(0);
+	transition: 400ms;
 }
 
 .career__popup.show {
+	/* transform: scale(1); */
+	opacity: 1;
+}
+
+.career__popup.show .career__item {
 	transform: scale(1);
+	visibility: visible;
+}
+
+.career__popup.show .overlay {
+	opacity: 1;
+	visibility: visible;
 }
 .career__popup .career__item .close {
 	position: absolute;

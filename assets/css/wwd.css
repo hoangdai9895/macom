@@ -256,6 +256,27 @@
 	left: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f6f6f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #626262;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #222222;
+}
+
 /* /reponsive */
 
 @media (max-width: 600px) {

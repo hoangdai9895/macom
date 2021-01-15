@@ -1,5 +1,6 @@
 $(".menu-icon").click(function () {
 	$(".menu-wrap").toggleClass("close");
+	$(".main-button") && $(".main-button").css("background-color", "transparent")
 });
 
 $(window).scrollTop(1);
@@ -29,12 +30,5 @@ $(".screen-3__list li").each(function () {
 			$(".screen-3-right__img").removeClass(" animate__slideOutDown");
 			$(".screen-3-right__img").addClass(" animate__slideInDown");
 		});
-
-		// setTimeout(function () {
-		// 	$(".screen-3-right__img").addClass(" animate__slideInDown");
-		// }, 250);
-		// setTimeout(function () {
-		// 	$(".screen-3-right__img").removeClass(" animate__slideOutDown");
-		// });
 	});
 });

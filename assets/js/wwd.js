@@ -11,9 +11,11 @@ $(document).scroll(function () {
 	if (window.pageYOffset >= 0 && window.pageYOffset <= 1 * HEIGHT) {
 		$("#menu-icon-main").attr("src", BLACK_SRC);
 		$(".logo").attr("src", BLACK_SRC_LG);
+		$(".main-button").css("background-color", "#fff")
 	} else {
 		$("#menu-icon-main").attr("src", WHITE_SRC);
 		$(".logo").attr("src", WHITE_SRC_LG);
+		$(".main-button").css("background-color", "transparent")
 	}
 	if (
 		Math.floor($(window).scrollTop() + $(window).height()) ===
