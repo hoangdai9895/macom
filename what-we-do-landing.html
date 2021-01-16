@@ -13,10 +13,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./assets/css/index.css" />
 		<link rel="stylesheet" href="./assets/css/menu.css" />
+		<link rel="stylesheet" href="./assets/css/wwd-landing.css" />
 	</head>
 	<body>
 		<!-- menu -->
@@ -75,16 +79,17 @@
 		<!-- header -->
 		<div class="main-button">
 			<img
-				src="./assets/img/menu_icon.png"
+				src="./assets/img/menu_icon_white.png"
 				alt="menu_icon"
 				class="menu-icon"
 			/>
-			<img src="./assets/img/Type.png" alt="" class="logo" />
+			<img src="./assets/img/Type-white.png" alt="" class="logo" />
 		</div>
 
 		<!-- end header -->
 		<div id="root">
-			<div class="dot__info dot__info__3">
+			<div class="dot__info dot__info__3" id="crcle-4__info">
+				<div class="info__overlay"></div>
 				<div class="dot__info__title">Performance Marketing</div>
 				<div class="dot__info__list">
 					<p>E-commerce Campaign</p>
@@ -93,7 +98,7 @@
 				</div>
 			</div>
 
-			<div class="dot__info dot__info__2">
+			<div class="dot__info dot__info__2" id="crcle-3__info">
 				<div class="dot__info__title">Branding & Strategy</div>
 				<div class="dot__info__list">
 					<p>E-commerce Campaign</p>
@@ -102,7 +107,7 @@
 				</div>
 			</div>
 
-			<div class="dot__info dot__info__1">
+			<div class="dot__info dot__info__1" id="crcle-2__info">
 				<div class="dot__info__title">Digital Creativer</div>
 				<div class="dot__info__list">
 					<p>E-commerce Campaign</p>
@@ -110,30 +115,41 @@
 					<p>Application</p>
 				</div>
 			</div>
+
 			<div class="opening-screen screen-2">
-				<div class="dot-fill dot-3">
-					<div class="dot">
-						<div class="circle"></div>
+				<div class="overlay"></div>
+
+				<div class="cricle crcle-2">
+					<div class="dot-container">
+						<div class="dot" id="crcle-2"></div>
 					</div>
+					<svg viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="50" class="dotted" />
+					</svg>
 				</div>
 
-				<div class="dot-fill dot-1">
-					<div class="dot">
-						<div class="circle"></div>
+				<div class="cricle crcle-3">
+					<div class="dot-container">
+						<div class="dot" id="crcle-3"></div>
 					</div>
+					<svg viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="50" class="dotted" />
+					</svg>
 				</div>
 
-				<div class="dot-fill dot-2">
-					<div class="dot">
-						<div class="circle"></div>
+				<div class="cricle crcle-4">
+					<div class="dot-container">
+						<div class="dot" id="crcle-4"></div>
 					</div>
+					<svg viewBox="0 0 100 100">
+						<circle cx="50" cy="50" r="50" class="dotted" />
+					</svg>
 				</div>
 
 				<div class="screen-2__big-cricle" id="screen-2__big-cricle">
 					<div class="screen-2__small-cricle">
 						<div class="screen-2__wrap-text">
 							<p class="screen-2__main-text">What.we.do</p>
-
 							<div class="screen-2__center-circle">
 								<p class="screen-2__main-text">What.we.do</p>
 							</div>
@@ -176,69 +192,65 @@
 		</script>
 		<script src="./assets/js/index.js"></script>
 		<script>
-			// $(".dot-fill.dot-3 .dot .circle").hover(function () {
-			// 	console.log("2222222222");
-			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
-			// 	calcPosition("dot-3", "dot__info__3");
-			// });
-			// $(".dot-fill.dot-3 .dot .circle").mousemove(function () {
-			// 	$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
-			// 	calcPosition("dot-3", "dot__info__3");
-			// });
-
-			// $(".dot-3").mousemove(function (e) {
-			// 	console.log("22222222222");
-			// 	$(".dot-fill.dot-3 .dot").addBack("animate-paused");
-			// });
-
-			// $(".dot-3").mouseleave(function (e) {
-			// 	console.log("3333");
-			// 	$(".dot-fill.dot-3 .dot").removeClass("animate-paused");
-			// });
-			// $(".dot-fill").mousemove(function (e) {
-			// 	console.log(e.currentTarget.classList[1]);
-			// 	calcPosition("dot-3", "dot__info__3");
-
-			// 	calcPosition("dot-2", "dot__info__2");
-
-			// 	calcPosition("dot-1", "dot__info__1");
-			// });
-
-			function calcPosition(dotNumber, dotInfo) {
-				const element = document.querySelector(
-					".dot-fill." + dotNumber + " .dot .circle"
-				);
+			function calcPosition(dotNumber) {
+				const element = document.querySelector("#" + dotNumber);
 				const topPos = element.getBoundingClientRect().top;
 				const leftPos = element.getBoundingClientRect().left;
-
-				$("." + dotInfo).css("top", topPos - 40 + "px");
-				$("." + dotInfo).css("left", leftPos + 0 + "px");
+				$("#" + dotNumber + "__info").css("top", topPos - 40 + "px");
+				$("#" + dotNumber + "__info").css("left", leftPos + 0 + "px");
 			}
 
-			$(".dot-3 .dot .circle").hover(function () {
-				$(".dot-fill.dot-3 .dot").toggleClass("animate-paused");
-				calcPosition("dot-3", "dot__info__3");
-				$(".dot__info__3").toggleClass("active");
-				$(".dot__info__1").removeClass("active");
-				$(".dot__info__2").removeClass("active");
+			$("#crcle-4").hover(function () {
+				$(".crcle-4 .dot-container").toggleClass("animate-paused");
+				calcPosition("crcle-4");
+				$("#crcle-4__info").toggleClass("active");
+				$("#crcle-3__info").removeClass("active");
+				$("#crcle-2__info").removeClass("active");
+
+				$(".dot__info__title").removeClass("fill-text__heading");
+				$("#crcle-4__info .dot__info__title").addClass(
+					"fill-text__heading"
+				);
+
+				$(".dot__info__list p").removeClass("fill-text");
+				$("#crcle-4__info p").addClass("fill-text");
 			});
 
-			$(".dot-2 .dot .circle").hover(function () {
-				console.log("222");
-				$(".dot-fill.dot-2 .dot").toggleClass("animate-paused");
-				calcPosition("dot-2", "dot__info__2");
-				$(".dot__info__2").toggleClass("active");
-				$(".dot__info__1").removeClass("active");
-				$(".dot__info__3").removeClass("active");
+			$("#crcle-3").hover(function () {
+				$(".crcle-3 .dot-container").toggleClass("animate-paused");
+				calcPosition("crcle-3");
+				$("#crcle-3__info").toggleClass("active");
+				$("#crcle-4__info").removeClass("active");
+				$("#crcle-2__info").removeClass("active");
+
+				$(".dot__info__title").removeClass("fill-text__heading");
+				$("#crcle-3__info .dot__info__title").addClass(
+					"fill-text__heading"
+				);
+
+				$(".dot__info__list p").removeClass("fill-text");
+				$("#crcle-3__info p").addClass("fill-text");
 			});
 
-			$(".dot-1 .dot .circle").hover(function () {
-				$(".dot-fill.dot-1 .dot").toggleClass("animate-paused");
-				calcPosition("dot-1", "dot__info__1");
-				$(".dot__info__1").toggleClass("active");
-				$(".dot__info__3").removeClass("active");
-				$(".dot__info__2").removeClass("active");
+			$("#crcle-2").hover(function () {
+				$(".crcle-2 .dot-container").toggleClass("animate-paused");
+				calcPosition("crcle-2");
+				$("#crcle-2__info").toggleClass("active");
+				$("#crcle-3__info").removeClass("active");
+				$("#crcle-4__info").removeClass("active");
+
+				$(".dot__info__title").removeClass("fill-text__heading");
+				$("#crcle-2__info .dot__info__title").addClass(
+					"fill-text__heading"
+				);
+
+				$(".dot__info__list p").removeClass("fill-text");
+				$("#crcle-2__info p").addClass("fill-text");
 			});
+
+			setTimeout(function () {
+				$(".crcle-2").addClass("zoom");
+			}, 1000);
 		</script>
 	</body>
 </html>
