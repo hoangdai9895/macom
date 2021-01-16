@@ -1,0 +1,218 @@
+::-webkit-scrollbar {
+	width: 0px; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+.solid {
+	stroke-dasharray: none;
+}
+.dotted {
+	stroke-dasharray: 0.2, 4.5;
+	stroke-linecap: round;
+	transition: all 250ms ease-in-out;
+}
+
+.cricle {
+	fill: transparent;
+	stroke: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* transform: translate(-50%, -50%); */
+}
+
+.crcle-2 {
+	height: var(--radius2);
+	width: var(--radius2);
+	stroke-width: 0.5px;
+	animation: biggerCircle 1.1s ease-in-out;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 1012;
+}
+
+.crcle-3 {
+	height: var(--radius3);
+	width: var(--radius3);
+	stroke-width: 0.3px;
+	animation: biggerCircle 1.3s ease-in-out;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 1011;
+}
+
+.crcle-4 {
+	height: var(--radius4);
+	width: var(--radius4);
+	stroke-width: 0.2px;
+	animation: biggerCircle 1.5s ease-in-out;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 1010;
+	/* position: relative; */
+}
+
+.crcle-2 .dotted {
+	/* stroke-dasharray: 0.2, 100; */
+	stroke-dasharray: 0.2, 4.5;
+}
+
+.crcle-2.zoom .dotted {
+	/* stroke-dasharray: 0.2, 4.5; */
+}
+
+.crcle-3 .dotted {
+	stroke-dasharray: 0.2, 3.5;
+}
+
+.crcle-4 .dotted {
+	stroke-dasharray: 0.2, 2.5;
+}
+
+.crcle svg {
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	animation: resizeCircle 1s ease-in-out;
+	z-index: 1;
+}
+
+.dot-container {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.dot-container .dot:hover::before {
+	opacity: 1;
+}
+
+.dot-container .dot:before {
+	content: "";
+	top: -5px;
+	left: -5px;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	transition: all 250ms ease-in-out;
+	opacity: 0;
+}
+
+div#crcle-4:before {
+	border-color: #00ff00;
+}
+
+div#crcle-3:before {
+	border-color: #ec008c;
+}
+
+div#crcle-2:before {
+	border-color: #fff200;
+}
+
+.crcle-2 .dot-container {
+	animation: rotate2 80s linear infinite;
+
+	transform: rotate(60deg);
+}
+
+.crcle-3 .dot-container {
+	animation: rotate3 80s linear infinite;
+
+	transform: rotate(120deg);
+}
+
+.crcle-4 .dot-container {
+	animation: rotate4 80s linear infinite;
+
+	transform: rotate(0deg);
+}
+
+.dot-container .dot {
+	width: 15px;
+	height: 15px;
+	background: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 100px;
+	left: 45px;
+}
+
+.crcle-4 .dot {
+	background: #00ff00;
+}
+
+.crcle-3 .dot {
+	background: #ec008c;
+	top: 68px;
+}
+
+.crcle-2 .dot {
+	background: #fff200;
+	top: 34px;
+}
+
+.fill-text {
+	width: 200px !important;
+}
+
+.fill-text__heading {
+	width: 300px !important;
+}
+
+@keyframes resizeCircle {
+	0% {
+		transform: translate(-50%, -50%) scale(3);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+}
+
+@keyframes biggerCircle {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(120deg);
+	}
+
+	100% {
+		transform: rotate(480deg);
+	}
+}
+
+@keyframes rotate3 {
+	0% {
+		transform: rotate(240deg);
+	}
+
+	100% {
+		transform: rotate(600deg);
+	}
+}
+
+@keyframes rotate4 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
