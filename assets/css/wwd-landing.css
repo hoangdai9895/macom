@@ -1,3 +1,9 @@
+:root {
+	--color2: #fff200;
+	--color3: #ec008c;
+	--color4: #00ff00;
+}
+
 ::-webkit-scrollbar {
 	width: 0px; /* Remove scrollbar space */
 	background: transparent; /* Optional: just make scrollbar invisible */
@@ -17,7 +23,6 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	/* transform: translate(-50%, -50%); */
 }
 
 .crcle-2 {
@@ -108,32 +113,29 @@
 }
 
 div#crcle-4:before {
-	border-color: #00ff00;
+	border-color: var(--color4);
 }
 
 div#crcle-3:before {
-	border-color: #ec008c;
+	border-color: var(--color3);
 }
 
 div#crcle-2:before {
-	border-color: #fff200;
+	border-color: var(--color2);
 }
 
 .crcle-2 .dot-container {
 	animation: rotate2 80s linear infinite;
-
 	transform: rotate(60deg);
 }
 
 .crcle-3 .dot-container {
 	animation: rotate3 80s linear infinite;
-
 	transform: rotate(120deg);
 }
 
 .crcle-4 .dot-container {
 	animation: rotate4 80s linear infinite;
-
 	transform: rotate(0deg);
 }
 
@@ -148,17 +150,29 @@ div#crcle-2:before {
 }
 
 .crcle-4 .dot {
-	background: #00ff00;
+	background: var(--color4);
 }
 
 .crcle-3 .dot {
-	background: #ec008c;
+	background: var(--color3);
 	top: 68px;
 }
 
 .crcle-2 .dot {
-	background: #fff200;
+	background: var(--color2);
 	top: 34px;
+}
+
+#crcle-4__info .dot__info__title.fill-text__heading {
+	border-color: var(--color4);
+}
+
+#crcle-3__info .dot__info__title.fill-text__heading {
+	border-color: var(--color3);
+}
+
+#crcle-2__info .dot__info__title.fill-text__heading {
+	border-color: var(--color2);
 }
 
 .fill-text {
@@ -166,7 +180,7 @@ div#crcle-2:before {
 }
 
 .fill-text__heading {
-	width: 300px !important;
+	width: 100% !important;
 }
 
 @keyframes resizeCircle {
@@ -214,5 +228,42 @@ div#crcle-2:before {
 
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+/* responsive */
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+	.crcle-4 .dot {
+		top: 175px;
+	}
+
+	.crcle-3 .dot {
+		top: 122px;
+	}
+
+	.crcle-2 .dot {
+		top: 74px;
+	}
+	.dot__info__title {
+		top: -37px;
+		left: 61px;
+	}
+	.dot__info.dot__info__3 {
+		width: 323px;
+	}
+	.dot__info__2 {
+		width: 291px;
+	}
+	.dot__info__1 {
+		width: 261px;
+	}
+	#crcle-3__info .dot__info__title {
+		top: -33px;
+		left: 55px;
+	}
+	#crcle-2__info .dot__info__title {
+		top: -32px;
+		left: 50px;
 	}
 }
