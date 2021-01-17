@@ -2,11 +2,10 @@ $(".menu-icon").click(function () {
 	$(".menu-wrap").toggleClass("close");
 	$(".main-button") &&
 		$(".main-button").css("background-color", "transparent");
-	// setTimeout(function () {
 	$(".menu__main ul li ").toggleClass(
 		"animate__animated animate__fadeInDown delay-menu-item"
 	);
-	// console.log($(".menu__main ul li ")
+	$(".menu__decor").toggleClass("active");
 	for (
 		i = 0;
 		i < document.querySelectorAll(".menu__main ul li ").length;

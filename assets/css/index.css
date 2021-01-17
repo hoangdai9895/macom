@@ -86,30 +86,6 @@
 	}
 }
 
-.delay-menu-item-0 {
-	animation-delay: 300ms;
-}
-
-.delay-menu-item-1 {
-	animation-delay: 400ms;
-}
-
-.delay-menu-item-2 {
-	animation-delay: 500ms;
-}
-
-.delay-menu-item-3 {
-	animation-delay: 600ms;
-}
-
-.delay-menu-item-4 {
-	animation-delay: 700ms;
-}
-
-.delay-menu-item-5 {
-	animation-delay: 800ms;
-}
-
 /* width */
 .screen-4__block__wraper::-webkit-scrollbar {
 	width: 2px;
