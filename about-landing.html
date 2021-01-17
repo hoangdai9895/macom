@@ -38,6 +38,9 @@
 				width: 0px; /* Remove scrollbar space */
 				background: transparent; /* Optional: just make scrollbar invisible */
 			}
+			.animate-delay-500ms {
+				animation-delay: 500ms;
+			}
 		</style>
 	</head>
 	<body>
@@ -110,14 +113,18 @@
 			<div class="opening-screen screen-4">
 				<div class="screen-4__mian">
 					<div class="screen-4__text-wrap">
-						<div class="screen-4__title-1">
+						<div
+							class="screen-4__title-1 animate__animated animate__fadeInRight animate-delay-500ms"
+						>
 							<p>a</p>
 							<p>b</p>
 							<p>o</p>
 							<p>u</p>
 							<p>t</p>
 						</div>
-						<div class="screen-4__title-2 delay-250ms">
+						<div
+							class="screen-4__title-2 delay-250ms animate__animated animate__fadeInRight animate-delay-500ms"
+						>
 							<p>u</p>
 							<p>s</p>
 						</div>
@@ -220,16 +227,19 @@
 					</div>
 				</div>
 
-				<a class="screen-2__btn" href="./about.html">
+				<a
+					class="screen-2__btn animate__animated animate__fadeInRight animate-delay-500ms"
+					href="./about.html"
+				>
 					<span>View details</span>
 					<img src="/assets/img/24.png" alt="" />
 				</a>
 			</div>
 
-			<div class="mouse-icon-wrap">
+			<!-- <div class="mouse-icon-wrap">
 				<img src="/assets/img/32.png" alt="" class="mouse" />
 				<img src="/assets/img/16.png" alt="" class="arrow-down" />
-			</div>
+			</div> -->
 
 			<footer>
 				<ul class="footer__info">

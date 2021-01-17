@@ -60,6 +60,7 @@
 }
 .contact .contact__form .contact__form-item {
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 }
 .contact .contact__form .contact__form-item label {
