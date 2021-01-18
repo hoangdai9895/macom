@@ -63,7 +63,7 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #ffffff;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 
 .wwd__item {
@@ -174,7 +174,7 @@
 .wwd__intro--wave {
 	/* overflow: hidden; */
 	position: relative;
-	max-width: 1170px;
+	max-width: 80%;
 	width: 100%;
 	height: 100px;
 }
@@ -294,7 +294,7 @@
 	stroke-width: 6px;
 	fill: transparent;
 	stroke: transparent;
-	transition: all 250 ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 .dot-content {
@@ -306,6 +306,32 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.dot-text {
+	position: absolute;
+	color: transparent;
+	width: 221px;
+	font-family: "Space Mono";
+	font-size: 19px;
+	top: -32px;
+	left: -43px;
+	transition: all 250ms ease-in-out;
+}
+
+.dot-1.active .dot-text {
+	color: var(--color2);
+}
+
+.dot-2.active .dot-text {
+	color: var(--color3);
+}
+
+.dot-3.active .dot-text {
+	color: var(--color4);
+}
+
+.dot-4.active .dot-text {
+	color: var(--color4);
 }
 
 .dot-1.active {
@@ -343,22 +369,22 @@
 
 .dot-1 {
 	top: -4px;
-	left: calc(0% + 109px);
+	left: calc(0% + 145px);
 }
 
 .dot-2 {
 	bottom: -5px;
-	left: calc(25% + 130px);
+	left: calc(25% + 150px);
 }
 
 .dot-3 {
 	top: -5px;
-	right: calc(25% + 130px);
+	right: calc(25% + 175px);
 }
 
 .dot-4 {
 	bottom: -5px;
-	right: calc(0% + 113px);
+	right: calc(0% + 146px);
 }
 
 .dotted {
