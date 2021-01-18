@@ -207,8 +207,8 @@
 }
 .career__popup .career__item .close {
 	position: absolute;
-	right: 5px;
-	top: 5px;
+	right: 24px;
+	top: 24px;
 }
 .career__popup .career__item .close img {
 	width: 20px;
