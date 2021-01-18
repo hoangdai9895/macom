@@ -1,3 +1,8 @@
+:root {
+	--color2: #fff200;
+	--color3: #ec008c;
+	--color4: #00ff00;
+}
 .wwd__intro {
 	width: 100%;
 	height: 100vh;
@@ -58,7 +63,7 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #ffffff;
-	margin-bottom: var(--heading1);
+	margin-bottom: 80px;
 }
 
 .wwd__item {
@@ -167,10 +172,11 @@
 }
 
 .wwd__intro--wave {
-	overflow: hidden;
+	/* overflow: hidden; */
 	position: relative;
-	width: 200px;
-	height: 50px;
+	max-width: 1170px;
+	width: 100%;
+	height: 100px;
 }
 
 .wwd__item-right .box ul li {
@@ -256,6 +262,137 @@
 	left: 0;
 }
 
+.line {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.line:after {
+	width: 100%;
+	height: 1px;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #22222c;
+}
+
+.line img {
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	position: absolute;
+}
+
+.line .dot {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 1;
+	stroke-width: 6px;
+	fill: transparent;
+	stroke: transparent;
+	transition: all 250 ease-in-out;
+}
+
+.dot-content {
+	width: 16px;
+	height: 16px;
+	background: #686868;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.dot-1.active {
+	stroke: var(--color2);
+}
+
+.dot-2.active {
+	stroke: var(--color3);
+}
+
+.dot-3.active {
+	stroke: var(--color4);
+}
+
+.dot-4.active {
+	stroke: var(--color4);
+}
+/* =========== */
+
+.dot-1.active .dot-content {
+	background: var(--color2);
+}
+
+.dot-2.active .dot-content {
+	background: var(--color3);
+}
+
+.dot-3.active .dot-content {
+	background: var(--color4);
+}
+
+.dot-4.active .dot-content {
+	background: var(--color4);
+}
+
+.dot-1 {
+	top: -4px;
+	left: calc(0% + 109px);
+}
+
+.dot-2 {
+	bottom: -5px;
+	left: calc(25% + 130px);
+}
+
+.dot-3 {
+	top: -5px;
+	right: calc(25% + 130px);
+}
+
+.dot-4 {
+	bottom: -5px;
+	right: calc(0% + 113px);
+}
+
+.dotted {
+	stroke-dasharray: 3, 27, 7, 5;
+	stroke-linecap: round;
+	transition: all 250ms ease-in-out;
+}
+
+.wwd__intro--wave .overlay {
+	width: 100%;
+	background: #686868;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition: all 250ms ease-in-out;
+	z-index: 1;
+}
+.wwd__intro--wave .overlay:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.wwd__intro--wave .overlay.active:after {
+	animation: fullWidth 4s ease-in-out;
+}
+
+.w-0 {
+	width: 0% !important;
+}
 /* width */
 ::-webkit-scrollbar {
 	width: 5px;
@@ -275,6 +412,25 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #222222;
+}
+
+@keyframes fullWidth {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+@keyframes fullWidthRevert {
+	0% {
+		width: 100%;
+	}
+
+	100% {
+		width: 0%;
+	}
 }
 
 /* /reponsive */
