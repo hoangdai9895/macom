@@ -1,0 +1,28 @@
+.slides-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.screen-4__block-item {
+	width: 650px;
+}
+
+.screen-4__block-item:nth-child(1) {
+	width: 650px;
+}
+
+.screen-4__block-item:nth-child(2) {
+	width: 350px;
+}
+
+.screen-4__block-item:nth-child(3) {
+	width: 114px;
+}
+
+.screen-4__block-item.revert {
+	width: 305px;
+}
+
+.screen-4__block-item__title {
+	color: transparent;
+}
