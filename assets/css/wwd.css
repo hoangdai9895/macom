@@ -262,14 +262,14 @@
 	left: 0;
 }
 
-.line {
+.line-container {
 	width: 100%;
 	height: 100%;
 	position: relative;
 	z-index: 2;
 }
 
-.line:after {
+.line-container:after {
 	width: 100%;
 	height: 1px;
 	content: "";
@@ -279,14 +279,14 @@
 	background: #22222c;
 }
 
-.line img {
+.line-container img {
 	width: 100%;
 	height: 100%;
 	bottom: 0px;
 	position: absolute;
 }
 
-.line .dot {
+.line-container .dot {
 	width: 30px;
 	height: 30px;
 	position: absolute;
