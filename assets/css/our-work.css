@@ -13,7 +13,7 @@
 .our-work .our-work__navbar ul li a {
 	-webkit-backdrop-filter: blur(50px);
 	backdrop-filter: blur(50px);
-	font-family: "Roboto";
+	font-family: "Roboto", serif;
 	font-size: var(--fz);
 	line-height: calc(120px * 1366 / 1920);
 	font-weight: 300;
@@ -49,7 +49,7 @@
 	text-align: left;
 	color: #b7b7b7;
 	position: absolute;
-	top: -28px;
+	top: -74px;
 }
 .our-work .our-work__content .our-work__content__right {
 	width: 60%;
