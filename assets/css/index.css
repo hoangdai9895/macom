@@ -243,17 +243,14 @@ li {
 	}
 	.intro__main-content__wrap:hover .intro__main-content::after {
 		height: 200%;
-		animation-duration: 1.5s;
 	}
 
 	.intro__main-content__wrap:hover .intro__main-content.left {
 		transform: skew(-30deg, 0deg) translateX(-300px);
-		animation-duration: 1.5s;
 	}
 
 	.intro__main-content__wrap:hover .intro__main-content.right {
 		transform: skew(-30deg, 0deg) translateX(300px);
-		animation-duration: 1.5s;
 	}
 }
 
@@ -653,7 +650,7 @@ p.screen-2__main-text {
 
 h3.screen-3__heading.heading {
 	font-family: "Space Mono", monospace;
-	font-size: 50px;
+	font-size: var(--heading);
 	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
@@ -671,11 +668,11 @@ ul.screen-3__list li {
 	cursor: pointer;
 	backdrop-filter: blur(50px);
 	font-family: "Roboto";
-	font-size: 16px;
+	font-size: var(--heading32);
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 2.75;
+	line-height: 2.55;
 	letter-spacing: normal;
 	text-align: left;
 	color: #ababab;
@@ -779,7 +776,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 .screen-4__block__wraper {
 	width: 80%;
-	overflow-x: auto;
+	overflow: hidden;
 	display: flex;
 }
 
@@ -792,7 +789,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 	font-family: "Space Mono", monospace;
 	letter-spacing: normal;
 	color: #7e7e7e;
-	font-size: 60px;
+	font-size: var(--heading);
 	padding: 0 15px;
 }
 .screen-4__title-2:after {
