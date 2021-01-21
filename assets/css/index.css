@@ -645,7 +645,7 @@ ul.screen-3__list li {
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 2.75;
+	line-height: 2.55;
 	letter-spacing: normal;
 	text-align: left;
 	color: #ababab;
@@ -749,7 +749,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 .screen-4__block__wraper {
 	width: 80%;
-	overflow-x: auto;
+	overflow: hidden;
 	display: flex;
 }
 
@@ -776,11 +776,6 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 .screen-4__title-2 {
 	position: relative;
-}
-.screen-4__block-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
 }
 
 .screen-4__block-item__title h3 {
