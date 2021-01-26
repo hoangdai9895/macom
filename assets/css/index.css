@@ -213,31 +213,38 @@ li {
 	transition-delay: 500ms;
 }
 @keyframes example {
-  from {height: 0%; }
-  to {height: 200%;}
+	from {
+		height: 0%;
+	}
+	to {
+		height: 200%;
+	}
 }
 
 @keyframes example2 {
-  to {	transform: skew(-30deg, 0deg) translateX(300px);}
+	to {
+		transform: skew(-30deg, 0deg) translateX(300px);
+	}
 }
 
 @keyframes example1 {
-  to { transform: skew(-30deg, 0deg) translateX(-300px);}
+	to {
+		transform: skew(-30deg, 0deg) translateX(-300px);
+	}
 }
 @media (min-width: 1024px) {
 	.intro__main-content::after {
 		animation-delay: 2s;
 		animation-name: example;
 		animation-duration: 1.5s;
-
 	}
 	.intro__main-content.left {
-		 animation-delay: 2s;
+		animation-delay: 2s;
 		animation-name: example1;
 		animation-duration: 1.5s;
 	}
 	.intro__main-content.right {
-		 animation-delay: 2s;
+		animation-delay: 2s;
 		animation-name: example2;
 		animation-duration: 1.5s;
 	}
@@ -840,7 +847,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 .screen-4__block-item__square {
 	background: #a8a8c9;
 	width: 100%;
-	height: 150px;
+	height: 340px;
 }
 
 .screen-4__block-item__title {
