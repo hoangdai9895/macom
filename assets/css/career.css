@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f6f6f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #626262;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #222222;
+}
+
 .main-button {
 	/* position: sticky; */
 	/* top: 0; */
@@ -207,8 +228,8 @@
 }
 .career__popup .career__item .close {
 	position: absolute;
-	right: 24px;
-	top: 24px;
+	right: 16px;
+	top: 16px;
 }
 .career__popup .career__item .close img {
 	width: 20px;
