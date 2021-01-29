@@ -196,6 +196,33 @@
 		</script>
 		<script src="./assets/js/index.js"></script>
 		<script>
+			$(document).ready(function(){
+				// $(".cricle").addClass("active")
+				$(window).scrollTop(1);
+					console.log(window.pageYOffset)
+
+			document.addEventListener("scroll", function () {
+				if (window.innerWidth > 1024) {
+					// console.log(window.pageYOffset)
+					if (window.pageYOffset === 0 && prevHref) {
+						$(".cricle").addClass("active")
+						$(".overlay").addClass("active")
+						setTimeout(function(){
+							window.location.href = prevHref;
+						}, 800)
+					}
+					if (window.pageYOffset >= 2 && nextHref) {
+						$(".cricle").addClass("active")
+						$(".overlay").addClass("active")
+						setTimeout(function(){
+							window.location.href = nextHref;
+						}, 800)
+					
+					}
+				}
+			});
+			})
+
 			calcPosition("crcle-4");
 			calcPosition("crcle-3");
 			calcPosition("crcle-2");

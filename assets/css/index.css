@@ -186,7 +186,7 @@ li {
 	letter-spacing: normal;
 	text-align: center;
 	color: #4b4b4b;
-	margin: 5% 0 0 0;
+	margin: 3% 0 0 0;
 }
 
 .intro__main-content p {
@@ -428,7 +428,7 @@ li {
 
 .intro__main-detail {
 	width: 450px;
-	margin: 110px 0;
+	margin: 60px 0;
 	font-family: "Roboto";
 	font-size: 22px;
 	font-weight: normal;
@@ -1079,6 +1079,13 @@ ul.footer__info li {
 }
 
 /* responsive */
+
+@media (min-width: 1367px) {
+	.intro__main-detail {
+		margin: 110px 0;
+	}
+}
+
 @media (min-width: 1024px) and (max-width: 1366px) {
 	.intro__main-detail {
 		margin: 45px 0;
