@@ -258,6 +258,19 @@
 		<script>
 			const nextHref = null;
 			const prevHref = "./our-works-landing.html";
+			$(window).scrollTop(1);
+
+			document.addEventListener("scroll", function () {
+				if (window.innerWidth > 1024) {
+					// console.log(window.pageYOffset)
+					if (window.pageYOffset === 0 && prevHref) {
+						window.location.href = prevHref;
+					}
+					if (window.pageYOffset >= 2 && nextHref) {
+						window.location.href = nextHref;
+					}
+				}
+			});
 		</script>
 		<script src="./assets/js/index.js"></script>
 		<script src="./assets/js/about-landing.js"></script>
