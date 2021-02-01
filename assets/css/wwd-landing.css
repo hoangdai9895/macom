@@ -250,7 +250,7 @@ div#crcle-2:before {
 
 /* responsive */
 
-@media (min-width: 1400px) and (max-width: 1920px) {
+@media (min-width: 1400px) {
 	.crcle-4 .dot {
 		top: 175px;
 	}
@@ -284,3 +284,17 @@ div#crcle-2:before {
 		left: 50px;
 	}
 }
+
+/* @media (min-width: 1921px) {
+	.crcle-4 .dot {
+		top: 175px;
+	}
+
+	.crcle-3 .dot {
+		top: 122px;
+	}
+
+	.crcle-2 .dot {
+		top: 74px;
+	}
+} */

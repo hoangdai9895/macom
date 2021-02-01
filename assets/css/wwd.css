@@ -87,7 +87,7 @@
 	position: relative;
 	font-family: "Space Mono";
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.37;
@@ -127,6 +127,7 @@
 	font-size: var(--heading64);
 	color: #c9c9c9;
 	font-family: "Roboto";
+	font-weight: 300;
 }
 .wwd__item .wwd__item-left p {
 	margin: 0 0 25px 0;
@@ -141,7 +142,6 @@
 	font-size: var(--heading24);
 	font-weight: bold;
 	line-height: 1.6;
-
 }
 .wwd__item .wwd__item-right {
 	width: 40%;
