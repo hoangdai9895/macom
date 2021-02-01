@@ -58,3 +58,31 @@
 .screen-4__block-item {
 	width: 0;
 }
+
+@media (min-width: 2560px) {
+	.screen-4__block-item.active {
+		width: 865px;
+	}
+
+	.screen-4__block-item.active-1 {
+		width: 468px;
+	}
+
+	.screen-4__block-item.active-2 {
+		width: 152px;
+	}
+	.screen-4__block-item__title h3 {
+		font-size: 42px;
+	}
+	.screen-4__block-item__title p {
+		font-size: 32px;
+	}
+
+	.screen-4__block-item__title > div {
+		width: 840px;
+	}
+
+	.screen-4__block-item__title {
+		height: 250px;
+	}
+}

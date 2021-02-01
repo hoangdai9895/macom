@@ -285,16 +285,8 @@ div#crcle-2:before {
 	}
 }
 
-/* @media (min-width: 1921px) {
-	.crcle-4 .dot {
-		top: 175px;
-	}
-
-	.crcle-3 .dot {
-		top: 122px;
-	}
-
-	.crcle-2 .dot {
-		top: 74px;
+/* @media (min-width: 2560px) {
+	.intro__main {
+		margin: 10% 0 0 0;
 	}
 } */
