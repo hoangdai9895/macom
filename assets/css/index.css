@@ -795,7 +795,7 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 .screen-4__text-wrap p {
 	font-family: "Space Mono", monospace;
 	letter-spacing: normal;
-	color: #7e7e7e;
+	color: #fff;
 	font-size: var(--heading);
 	padding: 0 15px;
 }

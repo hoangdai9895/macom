@@ -12,7 +12,7 @@
 .screen-4__block-item__title > div {
 	position: absolute;
 	white-space: normal;
-	top: 0;
+	top: 26px;
 	width: 400px;
 	left: 0;
 }
