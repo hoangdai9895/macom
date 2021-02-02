@@ -21,6 +21,7 @@
 	z-index: 1111;
 	left: -100%;
 	transition: 400ms ease-out;
+	overflow: hidden;
 }
 .menu-wrap.close {
 	left: 0;
@@ -35,6 +36,9 @@
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
+	/* z-index: 10001; */
+	position: fixed;
+	top: 0;
 }
 .menu .menu__decor {
 	position: relative;
@@ -161,7 +165,7 @@ ul.footer__info li:first-child:before {
 	background: #0000ff;
 	transform: rotate(-45deg);
 	position: absolute;
-	top: 50%;
+	bottom: 30%;
 	left: 35%;
 }
 marquee {
@@ -222,5 +226,11 @@ marquee:nth-child(3) {
 	.menu .menu__main ul li:nth-child(1),
 	.menu .menu__main ul li:nth-child(4) {
 		padding: 20px 0 10px 0;
+	}
+}
+
+@media (min-width: 2560px) {
+	.line {
+		bottom: 45%;
 	}
 }
