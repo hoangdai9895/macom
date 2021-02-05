@@ -309,10 +309,16 @@
 				if (window.innerWidth > 1024) {
 					// console.log(window.pageYOffset)
 					if (window.pageYOffset === 0 && prevHref) {
-						window.location.href = prevHref;
+						setTimeout(function(){
+							window.location.href = prevHref;
+						}, 500)
+					
 					}
 					if (window.pageYOffset >= 2 && nextHref) {
-						window.location.href = nextHref;
+						setTimeout(function(){
+							window.location.href = nextHref;
+						}, 500)
+						
 					}
 				}
 			});
