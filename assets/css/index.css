@@ -1402,6 +1402,18 @@ ul.footer__info li {
 	.intro__main-detail {
 		margin: 45px 0;
 	}
+	.text-container {
+		height: 300px;
+		/* width: 100%; */
+	}
+	.screen-4__text-wrap p {
+		font-size: 50px;
+	}
+
+	.screen-4__title-2:after {
+		height: 29%;
+		top: 158px;
+	}
 }
 
 @media (min-width: 1400px) {
