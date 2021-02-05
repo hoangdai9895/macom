@@ -296,29 +296,24 @@
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			crossorigin="anonymous"
 		></script>
-		<script>
-			const nextHref = "./what-we-do-landing.html";
-			const prevHref = null;
-		</script>
 		<script src="./assets/js/index.js"></script>
 		<script src="./assets/js/home.js"></script>
 		<script>
 			$(window).scrollTop(1);
+			const nextHref = "./what-we-do-landing.html";
+			const prevHref = null;
 
 			document.addEventListener("scroll", function () {
 				if (window.innerWidth > 1024) {
-					// console.log(window.pageYOffset)
 					if (window.pageYOffset === 0 && prevHref) {
-						setTimeout(function(){
-							window.location.href = prevHref;
-						}, 500)
-					
+						// setTimeout(function () {
+						window.location.href = prevHref;
+						// }, 500);
 					}
 					if (window.pageYOffset >= 2 && nextHref) {
-						setTimeout(function(){
-							window.location.href = nextHref;
-						}, 500)
-						
+						// setTimeout(function () {
+						window.location.href = nextHref;
+						// }, 500);
 					}
 				}
 			});
