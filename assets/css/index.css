@@ -203,7 +203,7 @@ li {
 }
 
 .text-container {
-	height: 500px;
+	height: 350px;
 	width: 100%;
 }
 
@@ -446,7 +446,7 @@ li {
 
 .intro__main-detail {
 	width: 450px;
-	margin: 60px 0;
+	/* margin: 60px 0; */
 	font-family: "Roboto";
 	font-size: 22px;
 	font-weight: normal;
@@ -458,7 +458,8 @@ li {
 	color: #232323;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, 5%);
+	transform: translate(-50%, -50%);
+	top: 50%;
 }
 
 .intro__main-detail.hover:after {
@@ -1394,13 +1395,13 @@ ul.footer__info li {
 
 @media (min-width: 1367px) {
 	.intro__main-detail {
-		margin: 110px 0;
+		/* margin: 110px 0; */
 	}
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
 	.intro__main-detail {
-		margin: 45px 0;
+		/* margin: 45px 0; */
 	}
 	.text-container {
 		height: 300px;
