@@ -250,7 +250,7 @@ div#crcle-2:before {
 
 /* responsive */
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
 	.crcle-4 .dot {
 		top: 175px;
 	}
