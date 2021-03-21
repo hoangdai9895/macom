@@ -151,9 +151,11 @@ html,
 }
 ul,
 li {
+	/*list-style: none;*/
+}
+.list-style{
 	list-style: none;
 }
-
 #root {
 	display: flex;
 	align-items: center;
