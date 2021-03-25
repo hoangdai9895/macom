@@ -291,4 +291,7 @@ ul.footer__info li,
 	.career h3 {
 		margin: 15px 0;
 	}
+	.career .career__content {
+		padding: 20px 0;
+	}
 }

@@ -180,6 +180,7 @@ marquee {
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #363640;
 	-webkit-text-fill-color: transparent;
+	z-index: 1;
 }
 
 marquee:nth-child(2) {
@@ -218,6 +219,10 @@ marquee:nth-child(3) {
 
 @media (max-width: 600px) {
 	.menu__main ul {
+		width: 100%;
+		z-index: 2;
+	}
+	.line {
 		width: 100%;
 	}
 }

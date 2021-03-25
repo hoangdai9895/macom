@@ -138,7 +138,7 @@
 	font-weight: 300;
 	font-family: "Roboto";
 	font-size: var(--heading24);
-	line-height: var(--lh38);
+	/* line-height: var(--lh38); */
 	margin: 0 0 20px 0;
 	color: #c8c8c8;
 }
@@ -229,5 +229,19 @@
 	}
 	.about .about__mem {
 		align-items: initial;
+	}
+	.about__info p {
+		line-height: 22px;
+	}
+	.about__intro__content {
+		width: 100%;
+	}
+
+	.box {
+		overflow: hidden;
+	}
+	.box img {
+		width: 100%;
+		object-fit: contain;
 	}
 }

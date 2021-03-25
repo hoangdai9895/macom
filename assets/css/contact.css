@@ -185,4 +185,7 @@ input[type="number"] {
 	.contact {
 		height: auto;
 	}
+	.contact .contact__form {
+		padding: 0 15px;
+	}
 }

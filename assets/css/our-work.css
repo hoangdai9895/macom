@@ -118,7 +118,7 @@ footer li,
 
 .our-work__content__slide {
 	max-width: 400px;
-	position: absolute;
+	/* position: absolute; */
 	top: 17px;
 	right: 0px;
 }
@@ -154,5 +154,8 @@ footer li,
 
 	.our-work__content {
 		padding: 0;
+	}
+	.our-work .our-work__content .our-work__content__right {
+		padding: 0 15px;
 	}
 }

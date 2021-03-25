@@ -1,3 +1,6 @@
+li {
+	list-style: none;
+}
 :root {
 	--heading: calc(80px * 1366 / 1920);
 	--heading1: calc(120px * 1366 / 1920);
@@ -153,7 +156,7 @@ ul,
 li {
 	/*list-style: none;*/
 }
-.list-style{
+.list-style {
 	list-style: none;
 }
 #root {
@@ -1215,6 +1218,7 @@ ul.footer__info li {
 	.screen-3 {
 		padding: 20% 10px 10px 10px;
 		display: flex;
+		height: auto;
 	}
 
 	.our-work.opening-screen.screen-3 .title {
@@ -1351,7 +1355,7 @@ ul.footer__info li {
 	}
 
 	.screen-4__title-2:after {
-		top: 50px;
+		top: 66px;
 	}
 
 	.screen-2__btn {
@@ -1360,7 +1364,7 @@ ul.footer__info li {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin: 10px auto;
+		margin: 30px auto;
 	}
 
 	.mouse-icon-wrap {
@@ -1496,5 +1500,14 @@ ul.footer__info li {
 	.screen-2__btn {
 		font-size: 24px;
 		padding: 20px 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro__main {
+		height: unset;
+	}
+	.intro__main-detail p {
+		margin: 20px 0;
 	}
 }
