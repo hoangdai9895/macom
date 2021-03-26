@@ -225,6 +225,12 @@ marquee:nth-child(3) {
 	.line {
 		width: 100%;
 	}
+	marquee {
+		font-size: 50px;
+	}
+	.main-button {
+		width: 100vw;
+	}
 }
 
 @media (max-width: 1366px) {
@@ -237,5 +243,14 @@ marquee:nth-child(3) {
 @media (min-width: 2560px) {
 	.line {
 		bottom: 45%;
+	}
+}
+
+@media (max-width: 375px) {
+	.menu {
+		padding: 10% 0 0 0;
+	}
+	.main-button {
+		padding: 12px;
 	}
 }

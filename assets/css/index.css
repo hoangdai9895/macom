@@ -1129,6 +1129,7 @@ ul.footer__info li {
 	.intro__main > div {
 		position: unset;
 		transform: unset;
+		margin: 50px 0;
 	}
 	.intro__main-content.left {
 		transition: unset;
@@ -1157,7 +1158,7 @@ ul.footer__info li {
 		margin: 50px 0;
 	}
 	p.intro__title {
-		margin: 35px 0;
+		margin: 25px 0;
 	}
 
 	.screen-2__wrap-text:before,
@@ -1509,5 +1510,14 @@ ul.footer__info li {
 	}
 	.intro__main-detail p {
 		margin: 20px 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.intro__main > div {
+		margin: 25px 0;
+	}
+	.opening-screen {
+		height: calc(104vh + 3px);
 	}
 }

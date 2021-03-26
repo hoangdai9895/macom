@@ -6,21 +6,18 @@ const WHITE_SRC = "./assets/img/menu_icon_white.png";
 const WHITE_SRC_LG = "./assets/img/Type-white.png";
 const BLACK_SRC_LG = "./assets/img/Type.png";
 
-
-
-$("#menu-icon-main").attr("src", WHITE_SRC);
+$("#menu-icon-main").attr("src", BLACK_SRC);
 $(document).scroll(function () {
 	if (window.pageYOffset >= 0 && window.pageYOffset <= 1 * HEIGHT) {
 		$("#menu-icon-main").attr("src", BLACK_SRC);
 		$(".logo").attr("src", BLACK_SRC_LG);
-		$(".main-button").css("background-color", "#fff")
-		clearHandleAnimationCurvedLine()
+		$(".main-button").css("background-color", "#fff");
+		clearHandleAnimationCurvedLine();
 	} else {
 		$("#menu-icon-main").attr("src", WHITE_SRC);
 		$(".logo").attr("src", WHITE_SRC_LG);
-		$(".main-button").css("background-color", "transparent")
-		handleAnimationCurvedLine()
-	
+		$(".main-button").css("background-color", "transparent");
+		handleAnimationCurvedLine();
 	}
 	if (
 		Math.floor($(window).scrollTop() + $(window).height()) ===
@@ -30,7 +27,6 @@ $(document).scroll(function () {
 	} else {
 		$(".mouse-icon-wrap").removeClass("hidden");
 	}
-	
 });
 
 $(".items-wrap").scroll(function () {
@@ -58,30 +54,28 @@ function removeClass(list, idx) {
 	});
 }
 
+function handleAnimationCurvedLine() {
+	$(".overlay").removeClass("w-0").addClass("active");
+	$(".wwd__intro--wave").addClass("active");
+	timeout1 = setTimeout(function () {
+		$(".dot-1").addClass("active");
+	}, 1000);
 
-function handleAnimationCurvedLine(){
-	$(".overlay").removeClass("w-0").addClass("active")
-	$(".wwd__intro--wave").addClass('active')
-	timeout1 = setTimeout(function(){
-		$(".dot-1").addClass('active')
-	}, 1000)
-	
-	timeout2 = setTimeout(function(){
-		$(".dot-2").addClass('active')
-	}, 1700)
-	
-	timeout3 = setTimeout(function(){
-		$(".dot-3").addClass('active')
-	}, 2400)
-	
-	timeout4 = setTimeout(function(){
-		$(".dot-4").addClass('active')
-	}, 3100)
+	timeout2 = setTimeout(function () {
+		$(".dot-2").addClass("active");
+	}, 1700);
+
+	timeout3 = setTimeout(function () {
+		$(".dot-3").addClass("active");
+	}, 2400);
+
+	timeout4 = setTimeout(function () {
+		$(".dot-4").addClass("active");
+	}, 3100);
 }
 
-function clearHandleAnimationCurvedLine(){
-	$(".overlay").removeClass("active").addClass("w-0")
-	$(".dot").removeClass('active')
-	$(".wwd__intro--wave").removeClass('active')
-
+function clearHandleAnimationCurvedLine() {
+	$(".overlay").removeClass("active").addClass("w-0");
+	$(".dot").removeClass("active");
+	$(".wwd__intro--wave").removeClass("active");
 }

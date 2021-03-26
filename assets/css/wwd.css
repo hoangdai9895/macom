@@ -478,4 +478,22 @@
 	.wwd__intro .ww__intro-sub-2 p {
 		padding: 0 10px;
 	}
+	.wwd__services {
+		padding: 15px;
+	}
+	.wwd__intro--wave {
+		display: none;
+	}
+	.wwd__intro p {
+		margin-bottom: 10px;
+	}
+	.wwd__intro {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 414px) {
+	.items-wrap {
+		padding: 0;
+	}
 }

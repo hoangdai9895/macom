@@ -294,4 +294,10 @@ ul.footer__info li,
 	.career .career__content {
 		padding: 20px 0;
 	}
+	.career .heading {
+		padding: 0%;
+	}
+	.career {
+		padding-top: 20%;
+	}
 }

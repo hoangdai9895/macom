@@ -126,7 +126,7 @@ footer li,
 /* responsive */
 @media (max-width: 600px) {
 	.our-work {
-		padding: 20% 0 0 0;
+		padding: 20% 15px 0 15px;
 	}
 
 	.our-work__navbar ul {
@@ -150,6 +150,7 @@ footer li,
 	}
 	.our-work__content > div {
 		width: 100% !important;
+		margin-top: 20px;
 	}
 
 	.our-work__content {
@@ -157,5 +158,9 @@ footer li,
 	}
 	.our-work .our-work__content .our-work__content__right {
 		padding: 0 15px;
+	}
+	.slick-slide {
+		display: flex !important;
+		justify-content: center;
 	}
 }
