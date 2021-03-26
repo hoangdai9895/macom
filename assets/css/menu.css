@@ -225,8 +225,16 @@ marquee:nth-child(3) {
 	.line {
 		width: 100%;
 	}
+	marquee:nth-child(2) {
+		right: -37%;
+	}
+	marquee:nth-child(3) {
+		right: -63%;
+	}
+
 	marquee {
 		font-size: 50px;
+		right: -10%;
 	}
 	.main-button {
 		width: 100vw;

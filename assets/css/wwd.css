@@ -474,6 +474,9 @@
 	.wwd {
 		padding: 20% 0 0 0;
 	}
+	.wwd__intro {
+		overflow-x: hidden;
+	}
 
 	.wwd__intro .ww__intro-sub-2 p {
 		padding: 0 10px;
@@ -482,13 +485,36 @@
 		padding: 15px;
 	}
 	.wwd__intro--wave {
-		display: none;
+		margin-top: 80px;
+		width: 100%;
+		max-width: 100%;
 	}
 	.wwd__intro p {
 		margin-bottom: 10px;
 	}
 	.wwd__intro {
-		height: 50vh;
+		/* height: 50vh; */
+	}
+	.wwd__services__content {
+		flex-direction: column;
+	}
+	.wwd__services__content ul {
+		margin-bottom: 30px;
+	}
+	.dot-text {
+		font-size: 12px;
+	}
+	.dot-3 {
+		right: calc(25% + 230px);
+	}
+	.dot-4 {
+		right: calc(0% + 220px);
+	}
+	.dot-1 {
+		left: calc(0% + 222px);
+	}
+	.dot-2 {
+		left: calc(25% + 233px);
 	}
 }
 
