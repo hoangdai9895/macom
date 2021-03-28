@@ -43,7 +43,7 @@
 	flex-direction: row-reverse;
 }
 .about .about__intro .about__intro__content .--top {
-	background: #a8a8c9;
+	/*background: #a8a8c9;*/
 	width: 649px;
 	height: 343px;
 }
@@ -87,7 +87,7 @@
 .about .about__mem .box {
 	width: 370px;
 	height: 370px;
-	background-color: #a8a8c9;
+	/*background-color: #a8a8c9;*/
 }
 .about .about__mem .about__mem__wrap {
 	padding: 0 30% 0 0;
@@ -182,12 +182,15 @@
 .about__info .lef {
 	max-width: 800px;
 }
-
+.box img{
+	width: 370px;
+	height: 430px;
+}
 /* responsive */
 
 @media (max-width: 600px) {
 	.about {
-		padding: 20% 10px 0 10px;
+		padding: 20% 67px 0 10px;
 	}
 	.about__info,
 	.about__intro,
@@ -225,7 +228,7 @@
 	}
 	.about .about__intro .about__intro__content .--bot,
 	.about .about__mem.--ood .about__mem__wrap {
-		padding: 20px 0 0 0px;
+		padding: 20px 36px  0 0px;
 	}
 	.about .about__mem {
 		align-items: initial;
@@ -241,7 +244,17 @@
 		overflow: hidden;
 	}
 	.box img {
-		width: 100%;
+		width: 250px;
+		height: 200px;
 		object-fit: contain;
+	}
+
+	.--top img{
+		width: 250px;
+		height: 200px;
+		object-fit: cover;
+	}
+	.about .about__mem .about__mem__wrap {
+		padding: 0 1% 0 0
 	}
 }
