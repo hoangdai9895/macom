@@ -246,7 +246,7 @@
 			document.addEventListener("scroll", function () {
 				if (window.innerWidth > 1024) {
 					// console.log(window.pageYOffset)
-					if (window.pageYOffset === 1 && prevHref) {
+					if (window.pageYOffset === 0 && prevHref) {
 						window.location.href = prevHref;
 					}
 					if (window.pageYOffset >= 2 && nextHref) {
