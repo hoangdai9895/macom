@@ -1271,9 +1271,11 @@ ul.footer__info li {
 	}
 
 	.our-work__item {
-		font-family: "Roboto";
+		font-family: "Roboto", serif;
 		color: #737373;
 		line-height: 25px;
+		font-size: 15px;
+
 	}
 
 	.screen-4 {
