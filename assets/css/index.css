@@ -1275,7 +1275,6 @@ ul.footer__info li {
 		color: #737373;
 		line-height: 25px;
 		font-size: 15px;
-
 	}
 
 	.screen-4 {
@@ -1358,7 +1357,7 @@ ul.footer__info li {
 	}
 
 	.screen-4__title-2:after {
-		top: 66px;
+		top: 110px !important;
 	}
 
 	.screen-2__btn {

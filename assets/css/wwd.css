@@ -465,6 +465,7 @@
 @media (max-width: 600px) {
 	.wwd__item {
 		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	.wwd__item > div {
@@ -503,6 +504,9 @@
 	}
 	.dot-text {
 		font-size: 12px;
+		width: 100px;
+		top: -37px;
+		text-align: center;
 	}
 	.dot-3 {
 		right: calc(25% + 230px);

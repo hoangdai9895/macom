@@ -218,18 +218,24 @@ marquee:nth-child(3) {
 /* reponsive */
 
 @media (max-width: 600px) {
+	.menu .menu__main {
+		padding: 0 0 0 15%;
+	}
+	.menu .menu__decor img {
+		top: 15px;
+	}
+	.menu__decor.active:after {
+		top: 15px;
+	}
 	.menu__main ul {
 		width: 100%;
 		z-index: 2;
 	}
 	.line {
-		width: 100%;
+		display: none;
 	}
-	marquee:nth-child(2) {
-		right: -37%;
-	}
-	marquee:nth-child(3) {
-		right: -63%;
+	marquee {
+		display: none;
 	}
 
 	marquee {
