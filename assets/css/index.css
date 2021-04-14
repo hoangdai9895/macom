@@ -869,8 +869,10 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 }
 
 .screen-4__block-item__square {
-	background: #a8a8c9;
-	width: 100%;
+	background: url('../img/Macom-big.jpg');
+
+	background-size:cover;
+
 	height: 340px;
 }
 
@@ -879,9 +881,23 @@ ul.screen-3__list li:hover .screen-3-right__img:after {
 	flex-direction: column;
 }
 .--yl {
-	background: #f1f0e0;
-}
+	background: url('../img/hoan-big.jpg');
+	background-size:cover;
 
+}
+.--y2 {
+	background: url('../img/Thanh-big.jpg');
+	background-size:cover;
+
+}
+.--y3 {
+	background: url('../img/Tri-big.jpg');
+	background-size:cover;
+
+}
+.--y4 {
+	background: url('../img/hoan-big.jpg');
+}
 /* footer */
 footer {
 	width: 100%;
@@ -1336,7 +1352,8 @@ ul.footer__info li {
 	}
 
 	.screen-4__top-content .box {
-		background: #a8a8c9;
+		background: url("../img/Macom-big.jpg");
+		background-size: cover;
 		width: 100%;
 		height: 198px;
 	}
@@ -1349,9 +1366,17 @@ ul.footer__info li {
 	.item:nth-child(3) .box {
 		height: 170px;
 		width: 250px;
-		background: #f1f0e0;
-	}
+		background: url("../img/hoan-big.jpg");
+		background-size: cover;
 
+	}
+	.item:nth-child(3) .box.thanh {
+		height: 170px;
+		width: 250px;
+		background: url("../img/Thanh-big.jpg");
+		background-size: cover;
+
+	}
 	.screen-4 .item:nth-child(3) {
 		padding: 0 0 0 30%;
 	}
@@ -1517,6 +1542,9 @@ ul.footer__info li {
 @media (max-width: 375px) {
 	.intro__main > div {
 		margin: 25px 0;
+	}
+	.intro__main .intro__main-content__wrap {
+		margin-top: -20px;
 	}
 	.opening-screen {
 		height: calc(104vh + 3px);

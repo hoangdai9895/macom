@@ -133,6 +133,13 @@ footer li,
 		width: max-content;
 		padding: 0 15px;
 	}
+	.our-work__content__slid div image  {
+		object-fit: cover;
+	}
+	.slide-item img {
+		width: 350px;
+		height: 320px;
+	}
 
 	.our-work__navbar {
 		overflow-y: auto;
