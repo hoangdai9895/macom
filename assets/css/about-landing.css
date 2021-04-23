@@ -33,6 +33,8 @@
 	transition: all 500ms ease-in-out;
 }
 
+
+
 .screen-4__block-item.active {
 	width: 650px;
 }
